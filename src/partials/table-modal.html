@@ -1,0 +1,37 @@
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal__close-button" type="button">
+            <svg class="modal__close-icon">
+                <use href="../images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form name="table-form" autocomplete="on">
+            <h3 class="modal__caption">Забронювати столик</h3>
+            <div class="modal__element-wrapper">
+                <input class="modal__personal-data" id="username-modal-table" name="username-modal-table" type="text">
+                <label class="modal__label" for="username-modal-table">На кого забронювати столик?</label>
+            </div>
+            <div class="modal__element-wrapper">
+                <input class="modal__personal-data" id="tel-modal-table" name="tel-modal-table" type="tel">
+                <label class="modal__label" for="tel-modal-table">Номер телефону</label>
+            </div>
+            <div class="modal__element-wrapper">
+                <select class="modal__select" name="persons-modal-table" id="persons-modal-table">
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="modal__label" for="persons-modal-table">Столик на яку кількість осіб?</label>
+            </div>
+            <div class="modal__element-wrapper">
+                <select class="modal__select" name="date-modal-table" id="date-modal-table">
+                    <option value="today">Сьогодні</option>
+                    <option value="tomorrow">Завтра</option>
+                    <option value="day-after-tomorrow">Післязавтра</option>
+                </select>
+                <label class="modal__label" for="date-modal-table">На яку дату бронювати?</label>
+            </div>
+        </form>
+    </div>
+</div>
