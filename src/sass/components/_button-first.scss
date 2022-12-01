@@ -1,4 +1,4 @@
-.button-first{
+.button-first {
     width: 384px;
     height: 64px;
     background: var(--color-black);
@@ -25,6 +25,6 @@
     @media screen and (min-width: 1024px) {
         width: 434px;
         font-size: 24px;
-        letter-spacing: 1.208;
+        line-height: 1.208;
     }
 }
