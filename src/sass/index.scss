@@ -3,9 +3,11 @@
 @import './utils/font';
 @import './utils/variabless';
 @import './utils/visually-hidden';
+@import './utils/choices.min';
 
 @import './base/base';
 @import './base/container';
+@import './base/backdrop';
 
 //buttoms
 @import './components/button';
@@ -14,3 +16,4 @@
 @import './components/button-second';
 
 @import './components/project-13';
+@import './components/modal'
