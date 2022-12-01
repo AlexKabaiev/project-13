@@ -82,6 +82,8 @@
         @media screen and (min-width: 1024px) {
             height: 64px;
             padding: 18px 12px;
+            font-size: 24px;
+            line-height: 1.17;
         }
 
         &::placeholder {
@@ -91,6 +93,11 @@
             line-height: 1.15;
             letter-spacing: 0.05em;
             color: #808080;
+
+            @media screen and (min-width: 1024px) {
+                    font-size: 24px;
+                    line-height: 1.17;
+                }
         }
     }
 
@@ -118,13 +125,15 @@
     border-radius: 2px;
     height: 54px;
 
+    @media screen and (min-width: 1024px) {
+        height: 64px;
+    }
 
 }
 
 .choices__inner {
     min-height: auto;
     padding-top: 11px;
-
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
@@ -133,6 +142,12 @@
     color: #808080;
     border: none;
     background-color: var(--color-background-lemon);
+
+    @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 1.17;
+            padding-top: 13px;
+        }
 }
 
 .choices__list--dropdown {
@@ -151,4 +166,9 @@
     background-color: var(--color-background-lemon);
     border: 1px solid var(--color-brown);
     border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
 }
