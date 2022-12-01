@@ -1,0 +1,16 @@
+.social {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__logo {
+    fill: var(--color-accent-yellow);
+  }
+}
