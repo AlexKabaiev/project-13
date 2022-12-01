@@ -2,6 +2,9 @@
   &__list {
     display: flex;
     gap: 20px;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
   }
 
   &__item {

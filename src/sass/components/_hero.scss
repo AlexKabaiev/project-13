@@ -9,13 +9,92 @@
     letter-spacing: 0.3em;
     color: var(--color-white);
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 128px;
+    }
   }
 
+  &__subtitle {
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__slogan {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 113px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+    }
+  }
   &__address {
     display: flex;
+    width: 287px;
+    padding: 8px 8px 8px 16px;
+    border: 1px solid var(--color-accent-yellow);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--color-white);
+    align-items: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 64px;
+    right: 15px;
   }
 
   &__address-icon {
     fill: var(--color-accent-yellow);
+    margin-right: 16px;
+  }
+
+  &__button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 181px 15px 102px 15px;
+
+    @media screen and (min-width: 414px) {
+      width: 414px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+      padding: 188px 47px 64px 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding: 164px 85px 79px 85px;
+    }
   }
 }
