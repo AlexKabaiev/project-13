@@ -8,11 +8,23 @@
         <form name="table-form" autocomplete="on">
             <h3 class="modal__caption">Забронювати столик</h3>
             <div class="modal__element-wrapper">
-                <input class="modal__personal-data" id="username-modal-table" name="username-modal-table" type="text">
+                <input  class="modal__personal-data" 
+                        id="username-modal-table" 
+                        name="username-modal-table" 
+                        type="text" 
+                        placeholder="Ваше ім'я"
+                        pattern="(^[A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14}$)"
+                        required
+                        >
                 <label class="modal__label" for="username-modal-table">На кого забронювати столик?</label>
             </div>
             <div class="modal__element-wrapper">
-                <input class="modal__personal-data" id="tel-modal-table" name="tel-modal-table" type="tel">
+                <input  class="tel-mask modal__personal-data" 
+                        id="tel-modal-table" 
+                        name="tel-modal-table" 
+                        type="tel" 
+                        required
+                        >
                 <label class="modal__label" for="tel-modal-table">Номер телефону</label>
             </div>
             <div class="modal__element-wrapper">
@@ -26,7 +38,7 @@
             </div>
             <div class="modal__element-wrapper">
                 <select class="modal__select" name="date-modal-table" id="date-modal-table">
-                    <option value="today">Сьогодні</option>
+                    <option value="today" selected>Сьогодні</option>
                     <option value="tomorrow">Завтра</option>
                     <option value="day-after-tomorrow">Післязавтра</option>
                 </select>
@@ -34,5 +46,7 @@
             </div>
             <button class="modal__send-button" type="submit"></button>
         </form>
+        <script src="./js/imask.js"></script>
+        <script src="./js/mask.js"></script>
     </div>
 </div>

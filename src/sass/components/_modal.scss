@@ -9,6 +9,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
+    @media screen and (min-width: 1024px) {
+            width: 712px;
+            padding: 60px;
+        }
+
     &__close-button {
         width: 24px;
         height: 24px;
@@ -18,10 +23,92 @@
         border: none;
         background: none;
         padding: 0;
+        cursor: pointer;
     }
 
     &__close-icon {
         stroke: var(--color-black);
     }
+
+    &__caption {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: var(--color-black);
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 40px;
+            line-height: 1.15;
+        }
+    }
+
+    &__element-wrapper {
+        max-width: 384px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 288px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__personal-data {
+        display: block;
+        width: 100%;
+        height: 54px;
+        padding: 17px 12px;
+        border: 1px solid var(--color-brown);
+        border-radius: 2px;
+        background: none;
+        margin-bottom: 8px;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: #808080;
+
+        &:focus {
+            outline: none;
+            border: 1px solid var(--color-brown);
+            border-radius: 2px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 64px;
+            padding: 18px 12px;
+        }
+
+        &::placeholder {
+            font-family: 'Times New Roman';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.15;
+            letter-spacing: 0.05em;
+            color: #808080;
+        }
+    }
+
+    &__label {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: var(--color-brown);
+        margin-left: 12px;
+
+        @media screen and (min-width: 1024px) {
+                font-size: 16px;
+                line-height: 1.25;
+            }
+    }
+
+
 }
 
