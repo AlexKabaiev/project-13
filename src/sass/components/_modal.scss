@@ -47,12 +47,22 @@
         }
     }
 
+    &__form-wrapper {
+        margin-bottom: 40px;
+        
+        @media screen and (min-width: 1024px) {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 16px;
+            }
+    }
+
     &__element-wrapper {
         max-width: 384px;
         margin-bottom: 20px;
 
         @media screen and (min-width: 1024px) {
-            max-width: 288px;
+            width: 288px;
             margin-bottom: 28px;
         }
     }
