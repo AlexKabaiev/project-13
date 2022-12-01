@@ -112,3 +112,43 @@
 
 }
 
+.choices {
+    margin-bottom: 8px;
+    border: 1px solid var(--color-brown);
+    border-radius: 2px;
+    height: 54px;
+
+
+}
+
+.choices__inner {
+    min-height: auto;
+    padding-top: 11px;
+
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #808080;
+    border: none;
+    background-color: var(--color-background-lemon);
+}
+
+.choices__list--dropdown {
+    border: 1px solid var(--color-brown);
+    border-radius: 2px;
+}
+
+.is-open .choices__list--dropdown {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #808080;
+    border: none;
+    background-color: var(--color-background-lemon);
+    border: 1px solid var(--color-brown);
+    border-radius: 2px;
+}
