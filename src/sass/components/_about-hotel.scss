@@ -1,0 +1,99 @@
+.interior {
+    background: #FFFDEE;
+    font-family: 'Montserrat';
+    width: 414px;
+    margin: auto;
+    padding: 18px 15px 20px 15px;
+@media (min-width: 1024px) {
+    width: 1024px;
+    }
+@media (min-width: 1280px) {
+    width: 1280px;
+    }
+}
+
+.interior_title {
+    text-align: right;
+    margin: 0 0 16px 0;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+}
+
+.interior_text {
+    text-align: right;
+    margin: 0 0 6px 0;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #B4B4B4;
+}
+
+.interior_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interior_item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+    width: 100%;
+}
+
+.interior_item:nth-child(2n) {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+/*
+.interior_list>.interior_item:nth-child(2n)>.interior_img {
+    width: 200px;
+}
+        width: 163px;
+        color: #C79002;
+*/
+.interior_img {
+    display: block;
+    width: 244px;
+    border-radius: 2px;
+    margin-bottom: 32px;
+
+}
+
+.interior_description {
+    text-align: left;
+    align-self: flex-end;
+    margin: 0 0 28px 0;
+    width: 242px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+}
+
+.interior_item:nth-child(2n)>.interior_description {
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.interior_item:nth-child(2n) {
+    justify-content: space-between;
+}
