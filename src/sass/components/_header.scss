@@ -2,7 +2,6 @@
 //     position: absolute;
 // }
 .header {
-    
     height: 143px;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
 }
@@ -10,7 +9,7 @@
 .header__container {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    // position: fixed;
     z-index: 99;
 
 }
