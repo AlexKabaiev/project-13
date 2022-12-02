@@ -1,0 +1,38 @@
+<div class="backdrop is-hidden" data-modal-price>
+    <div class="modal">
+        <button class="modal__close-button" type="button" data-modal-price-close>
+            <svg class="modal__close-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form name="table-form" autocomplete="on">
+            <h3 class="modal__caption">Ціни на номер</h3>
+            <p class="modal__subtitle">Двомісний люкс</p>
+            <p class="modal__subtitle-desc">Категорія номеру</p>
+            <div class="modal__form-wrapper">
+                <div class="modal__element-wrapper">
+                    <select class="select-amount-night modal__select" name="amount-night-modal-price" id="amount-night-modal-price">
+                        <option value="1-night" selected>1</option>
+                        <option value="2-night">2</option>
+                        <option value="3-night">3</option>
+                        <option value="4-night">4</option>
+                        <option value="5-night">5</option>
+                        <option value="6-night">6</option>
+                        <option value="7-night">7</option>
+                    </select>
+                    <label class="modal__label" for="amount-night-modal-price">Кількість ночей</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <input class="modal__personal-data" id="cost-modal-price" name="cost-modal-price" type="text"
+                        placeholder="1000" pattern="[0-9]{3,16}" required>
+                    <label class="modal__label" for="cost-modal-price">грн</label>
+                </div>
+            </div>
+            <button class="button-form modal__send-button" type="submit">Забронювати номер</button>
+        </form>
+        <script src="./js/imask.js"></script>
+        <script src="./js/mask.js"></script>
+        <script src="./js/choices.min.js"></script>
+        <script src="./js/select-price.js"></script>
+    </div>
+</div>

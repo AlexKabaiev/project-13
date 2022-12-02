@@ -47,6 +47,37 @@
         }
     }
 
+    &__subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: #808080;
+        margin-bottom: 28px;
+    
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    }
+
+    &__subtitle-desc {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: var(--color-brown);
+        margin-bottom: 20px;
+    
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+    }
+    
+
     &__form-wrapper {
         margin-bottom: 40px;
         
