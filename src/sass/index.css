@@ -186,6 +186,7 @@ img {
 }
 
 .interior_title {
+  position: relative;
   text-align: right;
   margin: 0 0 16px 0;
   font-family: "Film P3";
@@ -195,6 +196,16 @@ img {
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #494848;
+}
+
+.interior_title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100vw;
+  right: 36%;
+  background-color: rgba(186, 186, 186, 0.4);
 }
 
 .interior_text {
