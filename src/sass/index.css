@@ -11,7 +11,7 @@
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/TimesNewRoma-Bold.woff2");
+  src: url("../fonts/TimesNewRoman-Bold.woff2");
 }
 @font-face {
   font-family: "Montserrat";
@@ -88,6 +88,8 @@
   --color-black: #000000;
   --color-brown: #c79002;
   --color-accent-yellow: #f3c653;
+  --color-logo: #494848;
+  --color-paragraph-gray: #5F5F5F;
   --color-background: #605b5b;
   --color-background-lemon: #fffdee;
   --color-background-dark-lemon: #f0ecd6;
@@ -109,10 +111,7 @@
 }
 
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  font-size: 14px;
-  color: var(--color-primary);
-  background-color: var(--color-white);
+  font-family: "Times New Roman", "Raleway", "Film P3", sans-serif;
 }
 
 ul {
@@ -270,23 +269,6 @@ img {
   .button-second {
     max-width: 236px;
   }
-}
-
-.logo {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  background-color: red;
-  display: flex;
-  color: cyan;
-}
-
-.logo-team {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .amenities {
