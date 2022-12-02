@@ -1,5 +1,6 @@
 .hero {
   background-color: var(--color-background);
+  background-image: none;
 
   &__title {
     font-family: 'Film P3';
@@ -44,6 +45,7 @@
 
     @media screen and (min-width: 1024px) {
       font-size: 36px;
+      margin-bottom: 0;
     }
   }
   &__address {
@@ -61,6 +63,16 @@
     position: absolute;
     top: 64px;
     right: 15px;
+
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+      bottom: 64px;
+      top: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 85px;
+    }
   }
 
   &__address-icon {
@@ -73,6 +85,20 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 40px;
+      position: absolute;
+      right: 47px;
+      bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 60px;
+      right: 85px;
+      bottom: 65px;
+    }
   }
 
   &__container {
@@ -89,12 +115,12 @@
 
     @media screen and (min-width: 1024px) {
       width: 1024px;
-      padding: 188px 47px 64px 47px;
+      padding: 188px 47px 257px 47px;
     }
 
     @media screen and (min-width: 1280px) {
       width: 1280px;
-      padding: 164px 85px 79px 85px;
+      padding: 164px 85px 257px 85px;
     }
   }
 }

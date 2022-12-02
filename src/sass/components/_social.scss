@@ -5,6 +5,18 @@
     position: absolute;
     left: 15px;
     bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+      bottom: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: auto;
+      // bottom: 15px;
+      top: 38px;
+      right: 85px;
+    }
   }
 
   &__item {
