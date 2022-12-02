@@ -1,0 +1,161 @@
+// body{
+//     position: absolute;
+// }
+.header {
+    position: fixed;
+    z-index: 99;
+    height: 143px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-family: "Film P3";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+
+    letter-spacing: 0.3em;
+
+    color: var(--color-white);
+    text-decoration: none;
+    
+    padding-top: 16px;
+}
+
+.site-nav {
+    display: flex;
+    padding-top: 28px;
+    // gap: 20px;
+
+}
+
+.site-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav__link {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+
+    letter-spacing: 0.02em;
+    gap: 6px;
+
+    color: var(--color-accent-yellow);
+    text-decoration: none;
+}
+
+.site-nav__number--tel {
+    display: none;
+}
+
+.site-nav__svg {
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-accent-yellow);
+}
+
+.social {
+    display: none;
+}
+
+.social__svg {
+    fill: var(--color-accent-yellow);
+}
+
+@media screen and (min-width: 414px) {
+.site-nav {
+    gap: 20px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.logo {
+    margin-right: 87px;
+    padding-top: 24px;
+}
+
+.site-nav {
+    gap: 72px;
+}
+
+.site-nav__link {
+    margin-right: 32px;
+}
+
+.site-nav__link--container {
+    display: flex;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px;
+    gap: 16px;
+}
+
+.site-nav__number {
+    display: none;
+}
+
+.site-nav__number--tel {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+.site-nav__svg {
+    margin-right: 8px;
+}
+}
+
+
+
+@media screen and (min-width: 1280px) {
+.logo {
+    margin-right: 96px;
+}
+.site-nav {
+    gap: 69px;
+}
+
+.site-nav__link {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    gap: 0px;
+}
+
+.social {
+    margin-top: 38px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 59px;
+}
+}
