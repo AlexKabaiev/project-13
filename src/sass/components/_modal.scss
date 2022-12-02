@@ -67,6 +67,12 @@
         }
     }
 
+    &__element-wrapper-room {
+        @media screen and (min-width: 1024px) {
+                margin-left: 304px;
+            }
+    }
+
     &__personal-data {
         display: block;
         width: 100%;
