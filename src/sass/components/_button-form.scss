@@ -12,6 +12,11 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-white);
+    text-transform: uppercase;
+
+    transition-property: background-color, color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
 
     &:hover,
     &:focus {
