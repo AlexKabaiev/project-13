@@ -365,14 +365,20 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #C79002;
+  color: var(--color-brown);
   fill: currentColor;
 }
 .amenities__link__link:hover, .amenities__link__link:focus {
   color: var(--color-accent-yellow);
+}
+@media screen and (min-width: 1024px) {
+  .amenities__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -384,5 +390,20 @@ img {
 @media screen and (min-width: 1280px) {
   .amenities__flex {
     gap: 159px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities-btns {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities-btns {
+    margin-right: 110px;
   }
 }/*# sourceMappingURL=index.css.map */

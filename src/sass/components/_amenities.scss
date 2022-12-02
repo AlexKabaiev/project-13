@@ -1,7 +1,7 @@
 .amenities {
     background-color: var(--color-background-lemon);
     padding-top: 32px;
-   padding-bottom: 32px;
+    padding-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
         padding-top: 48px;
@@ -68,41 +68,42 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #C79002;
+    color: var(--color-brown);
     fill: currentColor;
 
 &__link:hover,
 &__link:focus {
     color:var(--color-accent-yellow);
     }
-//          @media screen and (min-width: 1024px) {
-// margin-left: 540px;
-//          }
-//                   @media screen and (min-width: 1280px) {
+         @media screen and (min-width: 1024px) {
+        font-size: 20px;
+        line-height: 1.2;
+        }
 
-//                   }
 }
-// @media screen and (min-width: 1024px) {
 
-// .button-first--left {
-//     margin-left: 540px;
-// }
-// }
  
 .amenities__flex{
     @media screen and (min-width: 1024px) {
-    display: flex;
-    gap: 80px;
+        display: flex;
+        gap: 80px;
+    }
+        @media screen and (min-width: 1280px) {
+            gap: 159px;
+        }   
 }
-    @media screen and (min-width: 1280px) {
-    gap: 159px;
-}   
-}
-// .amenities-btns {
-//     @media screen and (min-width: 1024px) {
-
-//     }
-// }
+.amenities-btns {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+        @media screen and (min-width: 1280px) {
+            margin-right: 110px;
+        }
+ }
