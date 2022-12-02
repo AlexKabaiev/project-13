@@ -2,10 +2,11 @@
     background-color: var(--color-background-footer);
     &__container{
         display: flex;
-        justify-content: space-around;
         align-items: center;
         padding: 40px 0;
+        justify-content: space-between;
         @media screen and (min-width: 1024px){
+            gap: 163px;
             padding: 80px 0;
         }
     }
@@ -43,7 +44,7 @@
         flex-wrap: wrap;
         gap: 16px;
         @media screen and (max-width: 1023px){
-            margin-bottom: 39px;
+            margin-bottom: 32px;
         }
     }
     &__navigation-link{
