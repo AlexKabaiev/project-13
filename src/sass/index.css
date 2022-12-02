@@ -328,6 +328,17 @@ img {
   color: #7A7A7A;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .amenities__text {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text--1 {
+    max-width: 757px;
+  }
+}
 
 .amenities__subtitle {
   font-family: "Times New Roman";
@@ -362,4 +373,16 @@ img {
 }
 .amenities__link__link:hover, .amenities__link__link:focus {
   color: var(--color-accent-yellow);
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities__flex {
+    display: flex;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities__flex {
+    gap: 159px;
+  }
 }/*# sourceMappingURL=index.css.map */
