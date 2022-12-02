@@ -53,16 +53,10 @@
     width: 287px;
     padding: 8px 8px 8px 16px;
     border: 1px solid var(--color-accent-yellow);
-    font-family: 'Montserrat';
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    color: var(--color-white);
-    align-items: center;
-    white-space: nowrap;
-    position: absolute;
     top: 64px;
     right: 15px;
+    position: absolute;
+    align-items: center;
 
     @media screen and (min-width: 1024px) {
       left: 47px;
@@ -78,6 +72,17 @@
   &__address-icon {
     fill: var(--color-accent-yellow);
     margin-right: 16px;
+    flex-shrink: 0;
+  }
+
+  &__address-link {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--color-white);
+    white-space: nowrap;
+    text-decoration: none;
   }
 
   &__button-list {
@@ -102,25 +107,17 @@
   }
 
   &__container {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 100%;
+    padding-top: 181px;
+    padding-bottom: 102px;
     position: relative;
-    padding: 181px 15px 102px 15px;
-
-    @media screen and (min-width: 414px) {
-      width: 414px;
-    }
 
     @media screen and (min-width: 1024px) {
-      width: 1024px;
-      padding: 188px 47px 257px 47px;
+      padding-top: 188px;
+      padding-bottom: 257px;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding: 164px 85px 257px 85px;
+      padding-top: 164px;
     }
   }
 }
