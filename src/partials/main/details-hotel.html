@@ -45,11 +45,19 @@
                 </picture>
             </li>
         </ul>
-        <button type="button"></button>
-        <button type="button"></button>
-        <button type="button" data-modal-room-open>Забронювати номер</button>
-        <form action="./hotel.html">
-            <button>Переход по ссылке</button>
-        </form>
+        <div class="details-hotel__button-wrapper">
+            <button class="details-hotel__button-swipe" type="button">
+                <svg class="details-hotel__button-icon">
+                    <use href="./images/icons.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+            <button class="details-hotel__button-swipe" type="button">
+                <svg class="details-hotel__button-icon">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+        <button class="details-hotel__button button-second" type="button" data-modal-room-open>Забронювати номер</button>
+        <button class="details-hotel__button button-second" onclick="window.location.href = './hotel.html';">Переглянути ціни</button>
     </div>
 </section>
