@@ -46,6 +46,10 @@
                 padding-bottom: 40px;
                 position: relative;
                 }
+
+            @media screen and (min-width: 1280px) {
+                padding-left: 52px;
+            }
     
     }
 
@@ -67,6 +71,10 @@
                 margin-left: 497px;
                 margin-bottom: 16px;
             }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 688px;
+        }
     }
 
     &__subtitle {
@@ -85,6 +93,10 @@
                 margin-left: 612px;
                 margin-bottom: 8px;
             }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 803px;
+        }
     }
 
     &__text {
@@ -105,6 +117,11 @@
                 margin-left: 150px;
                 margin-bottom: 40px;
             }
+
+        @media screen and (min-width: 1280px) {
+            width: 595px;
+            margin-left: 295px;
+        }
     }
 
     &__list {
@@ -117,6 +134,11 @@
                 width: 662px;
                 gap: 34px;
                 margin-bottom: 24px;
+            }
+
+        @media screen and (min-width: 1280px) {
+            width: 874px;
+            gap: 86px;
             }
     }
 
@@ -156,6 +178,10 @@
                 margin-left: 567px;
                 margin-bottom: 0;
             }
+
+        @media screen and (min-width: 1280px) {
+                margin-left: 776px;
+            }
     }
 
     &__button-swipe {
@@ -189,6 +215,10 @@
                 bottom: 164px;
                 margin-bottom: 0px;
                 }
+
+            @media screen and (min-width: 1280px) {
+                bottom: 159px;
+                }
         }
 
         @media screen and (min-width: 1024px) {
@@ -196,10 +226,18 @@
             right: 47px;
         }
 
+        @media screen and (min-width: 1280px) {
+            right: 86px;
+        }
+
         &:last-child {
             @media screen and (min-width: 1024px) {
-                    bottom: 100px;
+                bottom: 100px;
                 }
+
+            @media screen and (min-width: 1280px) {
+                bottom: 95px;
+            }
         }       
     }
 }
