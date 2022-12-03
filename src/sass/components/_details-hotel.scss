@@ -1,6 +1,7 @@
 .details-hotel {
 
     &__container {
+        position: relative;
         overflow: hidden;
         background-color: var(--color-background-lemon);
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main-page/mobile-background-hotel.jpg');
@@ -44,7 +45,6 @@
             @media screen and (min-width: 1024px) {
                 padding-top: 48px;
                 padding-bottom: 40px;
-                position: relative;
                 }
 
             @media screen and (min-width: 1280px) {
@@ -207,6 +207,7 @@
     &__button {
         display: block;
         margin: 0 auto;
+        position: relative;
 
         &:not(:last-child) {
             margin-bottom: 16px;
@@ -240,4 +241,55 @@
             }
         }       
     }
+
+    &__line {
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 1;
+            height: 100%;
+            left: 140px;
+            border-left: 1px solid rgba(122, 122, 122, 0.4);
+
+            @media screen and (min-width: 1024px) {
+                    left: 50%;
+                }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                width: 1;
+                height: 100%;
+                left: 132px;
+                border-left: 1px solid rgba(122, 122, 122, 0.4);
+
+                @media screen and (min-width: 1024px) {
+                        left: 232px;
+                    }
+
+                @media screen and (min-width: 1280px) {
+                        left: 300px;
+                }
+            }
+
+            &::before {
+                @media screen and (min-width: 1024px) {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        width: 1;
+                        height: 100%;
+                        right: 235px;
+                        border-left: 1px solid rgba(122, 122, 122, 0.4);
+                    }
+
+                @media screen and (min-width: 1280px) {
+                        right: 303px;
+                }
+            }
+        }
+    
 }
