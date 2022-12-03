@@ -1,4 +1,5 @@
 .amenities {
+    
     background-color: var(--color-background-lemon);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -11,6 +12,12 @@
              padding-top: 48px;
              padding-bottom: 48px;
          }
+}
+@media screen and (min-width: 1280px) {
+    .amenities__line {
+        background-image: repeating-linear-gradient(to right, #FFFDEE, #FFFDEE 322px, #BABABA66 1px, #BABABA66 323px);
+
+    }
 }
 .amenities__title {
     font-family: 'Times New Roman';
@@ -34,12 +41,24 @@
     color: #7A7A7A;
     margin-bottom: 16px;
 
+
     @media screen and (min-width: 1024px){
         max-width: 400px;
+        margin-bottom: 0;
     }
 
 }
+.amenities__text:last-child {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+}
+
  .text--1 {
+    margin-bottom: 32px;
+    
     @media screen and (min-width: 1024px){
         max-width: 757px;
     }
@@ -81,6 +100,7 @@
          @media screen and (min-width: 1024px) {
         font-size: 20px;
         line-height: 1.2;
+        margin-top: 32px;
         }
 
 }
@@ -107,3 +127,6 @@
             margin-right: 110px;
         }
  }
+  
+
+ 
