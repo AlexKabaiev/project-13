@@ -1,17 +1,8 @@
 .menu-section {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
     background-color: var(--color-background-lemon);
 
     @media screen and (min-width: 1024px) {
         background-color: var(--color-background-dark-lemon);
-        padding-top: 58px;
-        padding-bottom: 40px;
-    }
-
-     @media screen and (min-width: 1280px) {
-        padding-bottom: 60px;
     }
 }
 
@@ -211,11 +202,57 @@ table {
     }
 }
 
-.deco-line {
-    position: absolute;
-    display: block;
-    transform: rotate(-90deg);
-    width: 616px;
-    left: 759px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
+.container-menu {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    @media screen and (min-width: 1024px) {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .deco-line {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 616px;
+        right: 263px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .deco-line {
+        left: 50%;
+    }
+
+    .deco-line::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 616px;
+        left: -302px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+    }
+
+    .deco-line::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 616px;
+        right: -300px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+    }
 }
