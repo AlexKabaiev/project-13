@@ -1,43 +1,44 @@
 <section class="about-restaurant">
   <div class="container">
     <h2 class="visually-hidden about-restaurant_title">About our restaurant</h2>
-    <h3 class="about-restaurant_sub-title">Amet minim mollit non</h3>
-    <h4 class="about-restaurant_name">MIMIHO</h4>
+    <h3 class="about-restaurant__sub-title">Amet minim mollit non</h3>
+    <h4 class="about-restaurant__name">MIMIHO</h4>
     <ul>
-      <li class="about-restaurant_item">
-        <p class="about-restaurant_text">
+      <li class="about-restaurant__item about-restaurant__item-column">
+        <p class="about-restaurant__text about-restaurant__text-position">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <picture>
-          <source
-            srcset="
-              ./images/mobile-restaurant-interior1.jpg    1x,
-              ./images/mobile-restaurant-interior1@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-          />
-          <source
-            srcset="
-              ./images/tablet-restaurant-interior1.jpg    1x,
-              ./images/tablet-restaurant-interior1@2x.jpg 2x
-            "
-            media="(max-width: 1279px)"
-          />
-          <img
-            srcset="
-              ./images/desktop-restaurant-interior1.jpg    1x,
-              ./images/desktop-restaurant-interior1@2x.jpg 2x
-            "
-            src="./images/desktop-restaurant-interior1.jpg"
-            alt="tables in restaurant"
-          />
-          />
-        </picture>
+        <div class="about-restaurant__image-wrap">
+          <picture class="about-restaurant__image">
+            <source
+              srcset="
+                ./images/mobile-restaurant-interior1.jpg    1x,
+                ./images/mobile-restaurant-interior1@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/tablet-restaurant-interior1.jpg    1x,
+                ./images/tablet-restaurant-interior1@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              srcset="
+                ./images/desktop-restaurant-interior1.jpg    1x,
+                ./images/desktop-restaurant-interior1@2x.jpg 2x
+              "
+              src="./images/desktop-restaurant-interior1.jpg"
+              alt="tables in restaurant"
+            />
+          </picture>
+        </div>
       </li>
-      <li class="about-restaurant_item">
-        <picture>
+      <li class="about-restaurant__item about-restaurant__item-position">
+        <picture class="about-restaurant__image">
           <source
             srcset="
               ./images/mobile-restaurant-interior2.jpg    1x,
@@ -50,7 +51,7 @@
               ./images/tablet-restaurant-interior2.jpg    1x,
               ./images/tablet-restaurant-interior2@2x.jpg 2x
             "
-            media="(max-width: 1279px)"
+            media="(min-width: 1280px)"
           />
           <img
             srcset="
@@ -61,17 +62,76 @@
             alt="tables in restaurant with view"
           />
         </picture>
-        <p>
+        <p class="about-restaurant__text about-restaurant__text__color">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </li>
     </ul>
-    <img
-      src="./images/desktop-restaurant-slider1.jpg"
-      alt="a man holds a glass of wine at the table"
-    />
-    <img src="./images/desktop-restaurant-slider2.jpg" alt="served table" />
+    <div class="about-restaurant__slaider-wrap">
+      <div class="about-restaurant__slaider">
+        <picture class="about-restaurant__image">
+          <source
+            srcset="
+              ./images/mobile-restaurant-slider1.jpg    1x,
+              ./images/mobile-restaurant-slider1@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/tablet-restaurant-slider1.jpg    1x,
+              ./images/tablet-restaurant-slider1@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            srcset="
+              ./images/desktop-restaurant-slider1.jpg    1x,
+              ./images/desktop-restaurant-slider1@2x.jpg 2x
+            "
+            src="./images/desktop-restaurant-slider1.jpg"
+            alt="a man holds a glass of wine at the table"
+          />
+        </picture>
+        <picture
+          class="about-restaurant__image about-restaurant__image__shadow"
+        >
+          <source
+            srcset="
+              ./images/mobile-restaurant-slider2.jpg    1x,
+              ./images/mobile-restaurant-slider2@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source srcset=" ./images/tablet-restaurant-slider2.jpg 1x,
+          ./images/tablet-restaurant-slider2@2x.jpg media="(min-width: 1280px)"
+          />
+          <img
+            srcset="
+              ./images/desktop-restaurant-slider2.jpg    1x,
+              ./images/desktop-restaurant-slider2@2x.jpg 2x
+            "
+            src="./images/desktop-restaurant-slider2.jpg"
+            alt="served table"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <!--  
+    <div class="about-restaurant__button-wrap">
+      <button class="about-restaurant__button" type="button">
+        <svg class="about-restaurant__icon" width="32" height="32">
+          <use href="./imges/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="about-restaurant__button" type="button">
+        <svg class="about-restaurant__icon" width="32" height="32">
+          <use href="./imges/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>-->
   </div>
 </section>
