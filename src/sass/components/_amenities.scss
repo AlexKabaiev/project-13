@@ -75,6 +75,12 @@
 }
 .amenities__item {
     margin-bottom: 32px;
+    
+}
+.amenities__item:last-child {
+@media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
+    }
 }
 .amenities__link {
     display: flex;
