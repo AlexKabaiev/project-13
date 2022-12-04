@@ -1,0 +1,164 @@
+.footer {
+    &__container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: var(--color-background-footer);
+        gap: 85px;
+        @media screen and (min-width: 1024px){
+            padding: 80px 122px 80px 154px;
+            gap: 163px;
+        }
+        @media screen and (min-width: 1280px){
+            padding: 80px 187px 80px 216px;
+            gap: 231px;
+        }
+    }
+                &__line {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    width: 1;
+                    height: 100%;
+                    left: 511px;
+                    @media screen and (min-width: 1024px){
+                        border-left: 1px solid rgba(122, 122, 122, 0.4);
+                        left: 512px;
+                    }
+                    @media screen and (min-width: 1280px) {
+                        left: 640px;
+                    }
+        
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        width: 1;
+                        height: 100%;
+                        left: 132px;
+        
+                        @media screen and (min-width: 1024px) {
+                            border-left: 1px solid rgba(122, 122, 122, 0.4);
+                            left: 232px;
+                        }
+        
+                        @media screen and (min-width: 1280px) {
+                            left: 300px;
+                        }
+                    }
+                }
+    &__logo{
+        display: flex;
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;        
+        color: var(--color-accent-yellow);
+        text-transform: uppercase;
+        text-decoration: none;
+
+        @media screen and (min-width: 1024px){
+            font-size: 64px;
+            line-height: 1.078;
+        }
+    }
+    &__lists{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1024px){
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 137px;
+        }
+        @media screen and (min-width: 1280px){
+            gap: 199px;
+        }
+    }
+    &__navigation{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 16px;
+        @media screen and (max-width: 1023px){
+            margin-bottom: 32px;
+        }
+    }
+    &__navigation-link{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: var(--color-accent-yellow);
+            text-decoration: none;
+    }
+    &__social{
+        display: flex;
+        gap: 20px;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: column-reverse;
+            gap: 12px;
+        }
+    }
+    &__social-item{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--color-accent-yellow);
+        text-decoration: none;
+        cursor: pointer;
+        visibility: visible;
+
+        @media screen and (min-width: 1024px){
+            &:nth-child(1)::before{
+                position: absolute;
+                top: 10px;
+                left: 20%;
+                transform: translateX(-20%);
+                content: "Instagram";
+            }
+            &:nth-child(2)::before{
+                position: absolute;
+                top: 10px;
+                left: 20%;
+                transform: translateX(-20%);
+                content: "Facebook";
+            }
+            &:nth-child(3)::before{
+                position: absolute;
+                top: 10px;
+                left: 20%;
+                transform: translateX(-20%);
+                content: "Telegram";
+            }
+        }
+    }
+    &__social-link{
+        display: flex;
+        flex-direction: row-reverse;
+        @media screen and (min-width: 1024px) {
+            width: 143px;
+                height: 40px;
+                border: 0.5px solid var(--color-accent-yellow);
+                border-radius: 2px;
+                padding: 8px 12px;
+        }
+    }
+    &__social-icon{
+        fill: var(--color-accent-yellow);
+        
+    }
+}
