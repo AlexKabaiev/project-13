@@ -3,16 +3,21 @@
 @import './utils/font';
 @import './utils/variabless';
 @import './utils/visually-hidden';
-@import './utils/choices.min';
 
 @import './base/base';
 @import './base/container';
-@import './base/backdrop';
 
-//buttoms
+//buttons
 @import './components/button';
 @import './components/button-form';
 @import './components/button-first';
 @import './components/button-second';
-@import './components/modal'
+@import './components/button-arrow';
 
+// header
+@import './components/header';
+@import './components/details-hotel';
+
+// contacts
+@import './components/contacts';
+@import './components/amenities';

@@ -1,0 +1,17 @@
+.button-arrow{
+    width: 30px;
+    height: 17px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    fill: var(--color-white);
+
+    transition-property: fill;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+    &:hover,
+    &:focus{
+        fill: var(--color-accent-yellow);
+    }
+    
+}
