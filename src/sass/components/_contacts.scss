@@ -18,14 +18,12 @@
 .contacts__box {
 @media screen and (min-width: 1024px) {
     display: flex;
+    justify-content: space-between;
     }
 }
 
 .contacts__wrap {
-@media screen and (min-width: 1024px) {
-    display: block;
-    margin-right: 111px;
-    }
+
 
 @media screen and (min-width: 1280px) {
     margin-bottom: 108px;
@@ -34,7 +32,6 @@
 
 .contacts__logo {
     font-family: 'Film P3';
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.07;
@@ -122,12 +119,23 @@
 .address__wrap {
     display: flex;
     align-items: center;
-    padding: 9px 7px 8px 8px;
+    padding: 8px 7px;
     gap: 12px;
 
     background: #FFFFFF;
     border: 0.5px solid #F3C653;
     border-radius: 2px;
+
+@media screen and (min-width: 1024px) {
+    width: 144px;
+    margin-bottom: 24px;
+    }
+}
+
+.address__wrap--telephone {
+@media screen and (min-width: 1024px) {
+    width: 264px;
+    }
 }
 
 .address__row {
@@ -140,6 +148,7 @@
     border-radius: 2px;
 
 @media screen and (min-width: 1024px) {
+    padding: 8px;
     margin-left: 0;
     margin-bottom: 0;
     }
@@ -179,11 +188,10 @@
     
 @media screen and (min-width: 1024px) {
     width: 535px;
-    height: 412px;
+    height: 425px;
     }
 
 @media screen and (min-width: 1280px) {
     width: 634px;
-    height: 412px;
     }
 }
