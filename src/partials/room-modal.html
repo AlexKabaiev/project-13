@@ -1,0 +1,49 @@
+<div class="backdrop is-hidden" data-modal-room>
+    <div class="modal">
+        <button class="modal__close-button" type="button" data-modal-room-close>
+            <svg class="modal__close-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form name="table-form" autocomplete="on">
+            <h3 class="modal__caption">Забронювати номер</h3>
+            <div class="modal__form-wrapper">
+                <div class="modal__element-wrapper">
+                    <input class="modal__personal-data" id="username-modal-room" name="username-modal-room"
+                        type="text" placeholder="Ваше ім'я" pattern="(^[A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14}$)"
+                        required>
+                    <label class="modal__label" for="username-modal-room">На кого забронювати номер?</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <input class="tel-mask-room modal__personal-data" id="tel-modal-room" name="tel-modal-room" type="tel"
+                        required>
+                    <label class="modal__label" for="tel-modal-room">Номер телефону</label>
+                </div>
+                <div class="modal__element-wrapper modal__element-wrapper-room">
+                    <select class="select-persons-room modal__select" name="type-modal-room" id="type-modal-room">
+                        <option value="two-persons" selected>Двомісний люкс</option>
+                        <option value="three-persons">Тримісний люкс</option>
+                    </select>
+                    <label class="modal__label" for="type-modal-room">Категорія номеру</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <select class="select-date-room modal__select" name="date-modal-room" id="date-modal-room">
+                        <option value="today" selected>Сьогодні</option>
+                        <option value="tomorrow">Завтра</option>
+                        <option value="day-after-tomorrow">Післязавтра</option>
+                    </select>
+                    <label class="modal__label" for="date-modal-room">Дата заїзду</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <select class="select-date-room-first modal__select" name="date-modal-room-first" id="date-modal-room-first">
+                        <option value="today" selected>Сьогодні</option>
+                        <option value="tomorrow">Завтра</option>
+                        <option value="day-after-tomorrow">Післязавтра</option>
+                    </select>
+                    <label class="modal__label" for="date-modal-room-first">Дата виїзду</label>
+                </div>
+            </div>
+            <button class="button-form modal__send-button" type="submit">Оформити бронювання</button>
+        </form>
+    </div>
+</div>

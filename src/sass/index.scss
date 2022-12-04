@@ -7,7 +7,7 @@
 @import './base/base';
 @import './base/container';
 
-//buttoms
+//buttons
 @import './components/button';
 @import './components/button-form';
 @import './components/button-first';
@@ -21,7 +21,17 @@
 
 // header
 @import './components/header';
+@import './components/details-hotel';
 
 // contacts
 @import './components/contacts';
 
+@import './components/amenities';
+
+//modal
+@import './utils/choices.min';
+@import './components/modal';
+@import './base/backdrop';
+
+// menu restaurant
+@import './components/menu';
