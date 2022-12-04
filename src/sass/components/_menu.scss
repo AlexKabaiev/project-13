@@ -1,0 +1,259 @@
+.menu-section {
+  background-color: var(--color-background-lemon);
+
+  @media screen and (min-width: 1024px) {
+    background-color: var(--color-background-dark-lemon);
+  }
+}
+
+.menu-section__title {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  color: var(--color-black);
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hot-dishes {
+  margin-right: 0;
+}
+
+.menu-table__title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-black);
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  &.drinks {
+    margin-top: 5px;
+  }
+}
+
+.dish-name {
+  width: 226px;
+  margin-bottom: 4px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+
+  @media screen and (min-width: 1024px) {
+    width: 228px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 293px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &.dessert {
+    padding-bottom: 11px;
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 12px;
+    }
+
+    &.last-child {
+      @media screen and (max-width: 1023px) {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.dish-description {
+  padding-bottom: 8px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+
+  &.last-child {
+    padding-bottom: 0px;
+  }
+
+  &.last-dish {
+    padding-right: 10px;
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 17px;
+    }
+  }
+
+  &.first-salad {
+    padding-right: 2px;
+
+    @media screen and (min-width: 1024px) {
+      padding-right: 4px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-right: 2px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-right: 40px;
+    padding-bottom: 12px;
+  }
+}
+
+.dish-weight {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 26px;
+    padding-right: 60px;
+  }
+
+  &.drinks {
+    padding-left: 12px;
+
+    @media screen and (min-width: 1024px) {
+      padding-left: 33px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-left: 22px;
+      padding-right: 49px;
+    }
+  }
+}
+
+.dish-price {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+}
+
+.menu-table__wrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.flex-column {
+  @media screen and (min-width: 1024px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 140px;
+  }
+}
+
+.button--menu {
+  display: block;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 31px;
+  }
+}
+
+.container-menu {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .deco-line {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1;
+    height: 616px;
+    right: 263px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .deco-line {
+    left: 50%;
+  }
+
+  .deco-line::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1;
+    height: 616px;
+    left: -302px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+  }
+
+  .deco-line::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1;
+    height: 616px;
+    right: -300px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+  }
+}
