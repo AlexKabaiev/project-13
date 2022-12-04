@@ -12,12 +12,20 @@
 @import './components/button-form';
 @import './components/button-first';
 @import './components/button-second';
+@import './components/button-arrow';
 
 // header
 @import './components/header';
+@import './components/details-hotel';
 
 // contacts
 @import './components/contacts';
+@import './components/amenities';
+
+//modal
+@import './utils/choices.min';
+@import './components/modal';
+@import './base/backdrop';
 
 // menu restaurant
 @import './components/menu';
