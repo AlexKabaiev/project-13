@@ -2,13 +2,55 @@
     &__container{
         display: flex;
         align-items: center;
-        padding: 40px 0;
-        background-color: var(--color-background-footer);
+        position: relative;
         justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: var(--color-background-footer);
+        gap: 85px;
         @media screen and (min-width: 1024px){
-            padding: 80px 0;
+            padding: 80px 122px 80px 154px;
+            gap: 163px;
+        }
+        @media screen and (min-width: 1280px){
+            padding: 80px 187px 80px 216px;
+            gap: 231px;
         }
     }
+                &__line {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    width: 1;
+                    height: 100%;
+                    left: 511px;
+                    @media screen and (min-width: 1024px){
+                        border-left: 1px solid rgba(122, 122, 122, 0.4);
+                        left: 512px;
+                    }
+                    @media screen and (min-width: 1280px) {
+                        left: 640px;
+                    }
+        
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        width: 1;
+                        height: 100%;
+                        left: 132px;
+        
+                        @media screen and (min-width: 1024px) {
+                            border-left: 1px solid rgba(122, 122, 122, 0.4);
+                            left: 232px;
+                        }
+        
+                        @media screen and (min-width: 1280px) {
+                            left: 300px;
+                        }
+                    }
+                }
     &__logo{
         display: flex;
         font-family: 'Film P3';
@@ -82,24 +124,24 @@
 
         @media screen and (min-width: 1024px){
             &:nth-child(1)::before{
-                position: relative;
+                position: absolute;
                 top: 10px;
-                left: 62%;
-                transform: translateX(-50%);
+                left: 20%;
+                transform: translateX(-20%);
                 content: "Instagram";
             }
             &:nth-child(2)::before{
-                position: relative;
+                position: absolute;
                 top: 10px;
-                left: 62%;
-                transform: translateX(-50%);
+                left: 20%;
+                transform: translateX(-20%);
                 content: "Facebook";
             }
             &:nth-child(3)::before{
-                position: relative;
+                position: absolute;
                 top: 10px;
-                left: 62%;
-                transform: translateX(-50%);
+                left: 20%;
+                transform: translateX(-20%);
                 content: "Telegram";
             }
         }
