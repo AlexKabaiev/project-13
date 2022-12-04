@@ -1,0 +1,149 @@
+.hotel-room__luxe {
+    background: #FFFDEE;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+.container__room{
+    position: relative;
+}
+.hotel-room__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+
+}
+
+.hotel-room__logo {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-top: 8px;
+}
+
+.hotel-room__heading {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 12px;
+}
+
+.hotel-room__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+}
+
+.hotel-room__img {
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.hotel-button__detals {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.hotel-button__detals:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+.hotel-room__luxe {
+    padding-top: 62px;
+    padding-bottom: 40px;
+}
+.hotel-room__title {
+    font-size: 32px;
+}
+.hotel-room__logo {
+    font-size: 64px;
+    line-height: 1.08;
+    margin-top: 4px;
+}
+
+.hotel-room__heading {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-top: 62px;
+}
+
+.hotel-room__text {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 176px;
+    width: 439px;
+}
+
+.hotel-room__img {
+    display: flex;
+    position: absolute;
+    top: -105px;
+    left: auto;
+    right: 11%;
+    margin: 0;
+}
+
+.hotel-button__detals {
+    
+    margin-bottom: 113px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.hotel-button__detals:not(:last-child) {
+    margin-bottom: 16px;
+    margin-top: 89px;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+.hotel-room__luxe {
+    padding-top: 72px;
+}
+.hotel-room__heading {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-top: 72px;
+}
+
+.hotel-room__text {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 176px;
+    width: 439px;
+}
+}
+
