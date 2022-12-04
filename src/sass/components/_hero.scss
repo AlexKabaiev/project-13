@@ -1,4 +1,98 @@
 .hero {
+  background-color: var(--color-background);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main-page/mobile-background-hero-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/mobile-background-hero-main@2x.jpg);
+  }
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/tablet-background-hero-main.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/tablet-background-hero-main@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/desktop-background-hero-main.jpg);
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/desktop-background-hero-main@2x.jpg);
+    }
+  }
+
+  &--restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-page/mobile-background-hero-restaurant.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/mobile-background-hero-restaurant@2x.jpg);
+    }
+    @media screen and (min-width: 480px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/tablet-background-hero-restaurant.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/restaurant-page/tablet-background-hero-restaurant@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-page/desktop-background-hero-restaurant.jpg);
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/desktop-background-hero-restaurant@2x.jpg);
+    }
+  }
+
   &__title {
     font-family: 'Film P3';
     font-weight: 700;
@@ -109,59 +203,14 @@
     padding-top: 181px;
     padding-bottom: 102px;
     position: relative;
-    background-color: var(--color-background);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main-page/mobile-background-hero-main.jpg);
-    background-position: center;
-    background-size: cover;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/main-page/mobile-background-hero-main@2x.jpg);
-    }
 
     @media screen and (min-width: 1024px) {
       padding-top: 188px;
       padding-bottom: 257px;
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/main-page/tablet-background-hero-main.jpg);
+    }
 
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/main-page/tablet-background-hero-main@2x.jpg);
-      }
-
-      @media screen and (min-width: 1280px) {
-        padding-top: 164px;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/main-page/desktop-background-hero-main.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/main-page/desktop-background-hero-main@2x.jpg);
-        }
-      }
+    @media screen and (min-width: 1280px) {
+      padding-top: 164px;
     }
   }
 }
