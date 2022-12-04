@@ -3,22 +3,19 @@
     font-family: 'Montserrat';
     padding-top: 18px;
     padding-bottom: 20px;
-/*   
-@media (min-width: 1024px) {
-    width: 1024px;
+    background: var(--color-background-lemon);
+    @media (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 262px;
     }
-@media (min-width: 1280px) {
-    width: 1280px;
-    }*/
+    @media (min-width: 1280px) {
+    padding-top: 120px;
+    padding-bottom: 196px;
+                }
 }
-.interior .container {
-    background: var(--color-dark-lemon);
-    outline: 3px solid tomato;
-    overflow: hidden;
-}
-
 .interior__title {
     position: relative;
+    display: block;
     text-align: right;
     margin: 0 0 16px 0;
     font-family: 'Film P3';
@@ -27,9 +24,14 @@
     font-size: 40px;
     line-height: 1.08;
     letter-spacing: 0.3em;
+    transform: translateX(0.3em);
     color: #494848;
     @media (min-width: 1024px) {
         font-size: 64px;
+        margin-bottom: 4px;
+        }
+        @media (min-width: 1280px) {
+        margin-bottom: 24px;
         }
 } 
 
@@ -44,6 +46,7 @@
     color: #B4B4B4;
     @media (min-width: 1024px) {
         font-size: 32px;
+        margin-bottom: 4px;
             }
 }
 .interior__description {
@@ -57,20 +60,27 @@
     letter-spacing: 0.02em;
     color: #5F5F5F;
     @media (min-width: 1024px) {
-            font-size: 16px;
+        font-size: 16px;
+        width: 419px;
+        margin: 0 0 142px 0;
             }
+    @media (min-width: 1280px) {
+        width: 488px;
+        margin: 0 0 162px 0;
+        }
 }
 
 .interior__list {
     display: flex;
     flex-direction: column;
-
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
 
 .interior__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -96,33 +106,73 @@
     background: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     @media (min-width: 1024px) {
-            max-width: 244px;
+        position: absolute;    
+        top: -258px;
+        left: 65px;
+        max-width: 400px;
+        margin-bottom: 0;
             }
+    @media (min-width: 1280px) {
+            max-width: 460px;
+            left: 95px;
+        }
 }
-.interior__item:nth-child(2) .interior__img {
+.interior__item:nth-child(2n) .interior__img {
     max-width: 200px;
     @media (min-width: 1024px) {
-            max-width: 350px;
+        position: static;    
+        max-width: 350px;
         }
+    @media (min-width: 1280px) {
+            max-width: 460px;
+         }
 }
 .interior__item:nth-child(2n)>.interior__description {
     align-self: center;
     margin-bottom: 0;
     margin-right: 21px;
+    max-width: 163px;
     color: var(--color-brown);
+    @media (min-width: 1024px) {
+        margin-right: 48px;
+        max-width: 312px;
+     }
+    @media (min-width: 1280px) {
+        transform: translateY(-40%);
+}
 }
 .interior__item:nth-child(2n) {
     justify-content: space-between;
+    @media (min-width: 1024px) {
+        justify-content:flex-end;
+        }
+    }
+.interior__slider {
+    position: relative;
+    @media (min-width: 1024px) {
+    position: absolute;
+    transform: translateY(-28px);
+    }
+    @media (min-width: 1280px) {
+   transform: translateY(-167px);
+        }
 }
+
 .interior__slide-list {
     display: flex;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    clip-path: inset(-100vw -100vw -100vw 0);
     margin-bottom: 20px;
     justify-content: center;
-
-}
-
-
-    
+    @media (min-width: 1024px) {
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    margin-left: 0;
+    clip-path: inset(-100vw);
+    }
+}    
 .interior__slide-item {
     position: relative; 
 }
@@ -131,7 +181,12 @@
     background: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-
+    @media (min-width: 1024px) {
+    max-width: 194px;
+    }
+    @media (min-width: 1280px) {
+    max-width: 245px;
+    }
 }
 .interior__slide-item:nth-child(2n+1)>.interior__slide-img {
     position: absolute;
@@ -139,7 +194,14 @@
     max-width: 245px;
     height: auto;
     border: 1px solid rgba(186, 186, 186, 0.4);
-
+    @media (min-width: 1024px) {
+    max-width: 194px;
+    left: 234px;
+    }
+    @media (min-width: 1280px) {
+    max-width: 245px;
+    left: 285px;
+    }
 }
 .interior__arrows {
     display: flex;
@@ -155,6 +217,9 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .interior__button:hover,
 .interior__button:focus {
