@@ -1,0 +1,142 @@
+.hotel-room__standart {
+  background: #f0ecd6;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.hotel-room__title--standart {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+
+.hotel-room__logo--standart {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-top: 8px;
+}
+
+.hotel-room__heading--standart {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: 12px;
+}
+
+.hotel-room__text--standart {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+}
+
+.hotel-room__img--standart {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.hotel-button__detals--standart {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+}
+
+.hotel-button__detals--standart:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-room__standart {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+  .hotel-room__title--standart {
+    font-size: 32px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .hotel-room__logo--standart {
+    font-size: 64px;
+    line-height: 1.08;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 4px;
+  }
+
+  .hotel-room__heading--standart {
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 62px;
+  }
+
+  .hotel-room__text--standart {
+    font-size: 16px;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 176px;
+    width: 439px;
+  }
+
+  .hotel-room__img--standart {
+    display: flex;
+    position: absolute;
+    top: -105px;
+    right: auto;
+    left: 11%;
+    margin: 0;
+  }
+
+  .hotel-button__detals--standart {
+    margin-bottom: 113px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .hotel-button__detals--standart:not(:last-child) {
+    margin-bottom: 16px;
+    margin-top: 89px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel-room__standart {
+    padding-top: 72px;
+  }
+  .hotel-room__heading--standart {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-top: 72px;
+  }
+
+  .hotel-room__text--standart {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 176px;
+    width: 439px;
+  }
+}
