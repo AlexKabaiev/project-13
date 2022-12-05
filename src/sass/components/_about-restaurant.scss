@@ -1,0 +1,271 @@
+.about-restaurant {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    background-color: var(--color-background-lemon);
+    background-image: repeating-linear-gradient(-90deg,
+            rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0) 139px,
+                rgba(186, 186, 186, 0.4) 1px,
+                rgba(186, 186, 186, 0.4) 140px);
+
+    @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+    background-image: repeating-linear-gradient(-90deg,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0) 277px,
+                rgba(186, 186, 186, 0.4) 1px,
+                rgba(186, 186, 186, 0.4) 278px);
+    }
+
+    @media screen and (min-width: 1280px) {
+     padding-bottom: 50px;
+    background-image: repeating-linear-gradient(-90deg,
+               rgba(0, 0, 0, 0),
+               rgba(0, 0, 0, 0) 337px,
+               rgba(186, 186, 186, 0.4) 1px,
+               rgba(186, 186, 186, 0.4) 338px);
+    }
+
+    &__container {
+     @media screen and (max-width: 1023px){
+
+        overflow-x: hidden;}
+    @media screen and (min-width: 1024px){
+        position: relative;
+    }
+    }
+        
+
+    &__sub-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+
+    color: var(--color-gray);
+
+    @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    margin-bottom: 4px;}
+    }
+
+
+    &__name {
+        font-family: 'Film P3';
+        font-style: normal;
+        
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: 0.3em;
+
+        color: var(--color-logo);
+
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        margin-bottom: 24px;
+        }
+
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--color-paragraph-gray);
+
+
+    @media screen and (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+    }
+    &__text-position {
+        max-width: 258px;
+
+        @media screen and (min-width: 1024px) {
+        max-width: 439px;
+        }
+        @media screen and (min-width: 1280px) {
+        max-width: 518px;
+        }
+    }
+
+    &__text__color {
+        color: var(--color-brown);
+        max-width: 163px;
+
+        @media screen and (min-width: 1024px) {
+        max-width: 312px;
+    }}
+    
+
+        &__container  {
+            margin-bottom: 32px;
+
+
+        @media screen and (min-width: 1024px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__image {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        background-color: #DADADA;
+        }
+
+        &__image__shadow {
+        @media screen and (min-width: 1280px) {
+            border-radius: 0;
+            background-color: 0;
+            box-shadow: none;}
+        }
+
+    
+     &__image-wrap {
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 32px;
+        }
+
+     @media screen and (min-width: 1024px) {
+        display: block;
+        position: absolute;
+        top: -152;
+        right: 65px;
+
+        @media screen and (min-width: 1280px) {
+        right: 95px;
+        top: -153px;
+        }
+    }}
+
+    &__text-wrap {
+        margin-bottom: 28px;
+
+        @media screen and (min-width: 1024px) {
+      margin-bottom: 142px;
+    }
+        @media screen and (min-width: 1280px) {
+    margin-bottom: 162px;
+        }
+    }
+
+    &__container-position {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+
+        @media screen and (max-width: 1023px) {
+            justify-content: space-between;
+        }
+
+       @media screen and (min-width: 1024px) {
+        gap: 48px;
+
+        @media screen and (min-width: 1280px) {
+        gap: 32px;}
+
+    }
+    }
+    
+&__slaider {
+    margin-top: 32px;
+    margin-bottom: 20px;
+
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 32px;
+        margin-top: 0;
+        
+    }
+    @media screen and (min-width: 1280px) {
+        
+        margin-bottom: 40px;
+    }
+}
+
+&__slaider-item-first {
+    @media screen and (min-width: 1024px) {
+    position: absolute;
+    left: 489px;
+    top: -27px;
+    }
+    
+        @media screen and (min-width: 1280px) {
+    top: -172px;
+    left: 580px;
+    }
+}
+
+&__slaider-item-second {
+    
+    position: absolute;
+    top: 0;
+
+    @media screen and (max-width: 1023px) {
+    right: -159px;
+    }
+
+    @media screen and (min-width: 1024px) {
+    right: 13px;
+    top: -27;
+    }
+    @media screen and (min-width: 1280px) {
+    right: 0;
+    top: -172px;}
+    
+}
+
+   &__image-slider {
+   @media screen and (max-width: 1023px) {
+   margin-left: 69px;}
+}
+
+        &__button {
+            display: flex;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border: none;
+            padding: 0;
+            background-color: #fffdee00;
+            color: var(--color-black);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+        }
+        &__button:hover ,&__button:focus {
+            color: var(--color-accent-yellow);
+        }
+        &__icon {
+            fill: currentColor;}
+        
+    &__button-wrap {
+        display: flex;
+        justify-content: flex-end;
+        gap: 31px;
+        
+
+        @media screen and (min-width: 1024px) {
+        margin-right: 15px;
+        margin-top: 198px;}
+        
+        @media screen and (min-width: 1280px) {
+        margin-right: 8px;
+        margin-top: 143px;}
+    }
+
+}
