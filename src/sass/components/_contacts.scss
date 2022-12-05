@@ -1,0 +1,245 @@
+.contacts {
+  background-color: var(--color-background-lemon);
+}
+
+.contacts__box {
+  position: relative;
+
+  padding-top: 36px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 56px;
+    padding-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 56px;
+    padding-bottom: 73px;
+  }
+}
+
+.contacts__wrap {
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 108px;
+  }
+}
+
+.contacts__logo {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+
+  display: block;
+  margin-bottom: 12px;
+
+  text-decoration: none;
+  color: var(--color-logo);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    margin-bottom: 16px;
+
+    color: #828282;
+  }
+}
+
+.contacts__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+
+  color: var(--color-paragraph-gray);
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.address__list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.address__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+
+  color: var(--color-brown);
+}
+.address__list--hotel {
+  gap: 54px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 48px;
+  }
+}
+
+.address__wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 7px;
+  gap: 12px;
+
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+
+  @media screen and (min-width: 1024px) {
+    width: 144px;
+    margin-bottom: 24px;
+  }
+}
+
+.address__wrap--telephone {
+  @media screen and (min-width: 1024px) {
+    width: 264px;
+  }
+}
+
+.address__row {
+  padding: 8px 33px 7px 10px;
+  margin-left: 124px;
+  margin-bottom: 32px;
+
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 8px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #494848;
+
+  &--text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+  }
+}
+
+.address__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+
+  fill: var(--color-brown);
+}
+
+.address__map {
+  position: relative;
+
+  @media screen and (max-width: 414px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 535px;
+    height: 425px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 634px;
+  }
+}
+
+.contacts__deco-line {
+  width: 1px;
+  height: 550px;
+  border-left: 1px solid rgba(186, 186, 186, 0.4);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    left: 50%;
+    height: 100%;
+  }
+}
+
+.contacts__deco-line::after {
+  content: '';
+  width: 1px;
+  height: 550px;
+  border-left: 1px solid rgba(186, 186, 186, 0.4);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 132px;
+
+  @media screen and (min-width: 1024px) {
+    height: 100%;
+    left: 232px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 300px;
+  }
+}
+
+.contacts__deco-line::before {
+  @media screen and (min-width: 1024px) {
+    content: '';
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid rgba(186, 186, 186, 0.4);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 235px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 303px;
+  }
+}

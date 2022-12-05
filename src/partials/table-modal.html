@@ -1,0 +1,43 @@
+<div class="backdrop is-hidden" data-modal-table>
+    <div class="modal">
+        <button class="modal__close-button" type="button" data-modal-table-close>
+            <svg class="modal__close-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form name="table-form" autocomplete="on">
+            <h3 class="modal__caption">Забронювати столик</h3>
+            <div class="modal__form-wrapper">
+                <div class="modal__element-wrapper">
+                    <input class="modal__personal-data" id="username-modal-table" name="username-modal-table"
+                        type="text" placeholder="Ваше ім'я" pattern="(^[A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14}$)"
+                        required>
+                    <label class="modal__label" for="username-modal-table">На кого забронювати столик?</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <input class="tel-mask-table modal__personal-data" id="tel-modal-table" name="tel-modal-table" type="tel"
+                        required>
+                    <label class="modal__label" for="tel-modal-table">Номер телефону</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <select class="select-persons-table modal__select" name="persons-modal-table" id="persons-modal-table">
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label class="modal__label" for="persons-modal-table">Столик на яку кількість осіб?</label>
+                </div>
+                <div class="modal__element-wrapper">
+                    <select class="select-date-table modal__select" name="date-modal-table" id="date-modal-table">
+                        <option value="today" selected>Сьогодні</option>
+                        <option value="tomorrow">Завтра</option>
+                        <option value="day-after-tomorrow">Післязавтра</option>
+                    </select>
+                    <label class="modal__label" for="date-modal-table">На яку дату бронювати?</label>
+                </div>
+            </div>
+            <button class="button-form modal__send-button" type="submit">Оформити бронювання</button>
+        </form>
+    </div>
+</div>
