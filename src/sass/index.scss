@@ -1,40 +1,36 @@
 @import './common';
-
+// utils
 @import './utils/font';
 @import './utils/variabless';
 @import './utils/visually-hidden';
-
+@import './utils/choices.min';
+// base
 @import './base/base';
 @import './base/container';
+@import './base/backdrop';
+// components
 @import './components/about-hotel';
-
 //buttons
 @import './components/button';
 @import './components/button-form';
 @import './components/button-first';
 @import './components/button-second';
 @import './components/button-arrow';
-
 //hero
 @import './components/hero';
 @import './components/social';
-
 // header
 @import './components/header';
 @import './components/details-hotel';
-
 // contacts
 @import './components/contacts';
-
 @import './components/amenities';
-
 //modal
-@import './utils/choices.min';
 @import './components/modal';
-@import './base/backdrop';
-
 // menu restaurant
 @import './components/menu';
-
 //footer
 @import './components/footer';
+// hotel room
+@import './components/luxe-2';
+@import './components/standart-2';
