@@ -1,0 +1,2 @@
+!function(){for(var e=document.querySelector("[data-modal-price]"),t=document.querySelector("[data-modal-price-close]"),r=document.querySelectorAll("[data-modal-price-open]"),l=0,n=r.length;l<n;l++)r[l].addEventListener("click",u);var a=!0,c=!1,o=void 0;try{for(var d,i=r[Symbol.iterator]();!(a=(d=i.next()).done);a=!0){d.value.addEventListener("click",u)}}catch(e){c=!0,o=e}finally{try{a||null==i.return||i.return()}finally{if(c)throw o}}function u(){e.classList.toggle("is-hidden")}t.addEventListener("click",u)}();
+//# sourceMappingURL=hotel.76d1f8d8.js.map
