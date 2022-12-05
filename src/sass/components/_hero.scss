@@ -12,7 +12,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/mobile-background-hero-main@2x.jpg);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 414px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/tablet-background-hero-main.jpg);
 
@@ -57,7 +57,7 @@
         ),
         url(../images/restaurant-page/mobile-background-hero-restaurant@2x.jpg);
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 414px) {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -108,7 +108,7 @@
         ),
         url(../images/hotel-page/mobile-background-hero-hotel-room@2x.jpg);
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 414px) {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -148,6 +148,8 @@
 
   &--room {
     background-image: none;
+    background-color: var(--color-background-lemon);
+    position: relative;
   }
 
   &__title {
@@ -235,6 +237,11 @@
     @media screen and (min-width: 1024px) {
       left: 47px;
       bottom: 24px;
+      z-index: 3;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
 
@@ -279,10 +286,17 @@
     position: absolute;
     bottom: 40px;
     right: 73px;
+    z-index: 3;
 
     @media screen and (min-width: 1024px) {
       right: 47px;
       bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      right: 85px;
+      bottom: 66px;
+      z-index: 2;
     }
   }
 
@@ -302,12 +316,16 @@
   }
 
   &__container--room {
-    padding-bottom: 118px;
-    padding-top: 381px;
+    position: relative;
+    width: 414px;
+    margin: 0 auto;
 
     @media screen and (min-width: 1024px) {
-      padding-top: 468px;
-      padding-bottom: 104px;
+      width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
     }
   }
 
@@ -319,9 +337,21 @@
     letter-spacing: 0.05em;
     color: var(--color-white);
     margin-bottom: 14px;
+    position: absolute;
+    bottom: 193px;
+    left: 15px;
+    z-index: 3;
 
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
+      font-size: 36px;
+      bottom: 211px;
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 155px;
+      left: 85px;
     }
   }
 
@@ -333,10 +363,81 @@
     letter-spacing: 0.02em;
     color: var(--color-white);
     width: 325px;
+    position: absolute;
+    z-index: 3;
+    bottom: 118px;
+    left: 15px;
 
     @media screen and (min-width: 1024px) {
       font-size: 16px;
       margin-bottom: 0;
+      width: 400px;
+      bottom: 104px;
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 48px;
+      left: 85px;
+    }
+  }
+
+  &__button-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    fill: var(--color-accent-yellow);
+    display: block;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  &__button-arrow--left {
+    left: 15px;
+
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 85px;
+    }
+  }
+
+  &__button-arrow--right {
+    right: 15px;
+
+    @media screen and (min-width: 1024px) {
+      right: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      right: 85px;
+    }
+  }
+
+  &__room-img {
+    width: 414px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
     }
   }
 }
