@@ -74,13 +74,30 @@
           url(../images/restaurant-page/tablet-background-hero-restaurant@2x.jpg);
       }
     }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/desktop-background-hero-restaurant.jpg);
+      max-width: 1280px;
+      margin: 0 auto;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/restaurant-page/desktop-background-hero-restaurant@2x.jpg);
+      }
+    }
   }
 
-  @media screen and (min-width: 1024px) {
+  &--hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/restaurant-page/desktop-background-hero-restaurant.jpg);
-    max-width: 1280px;
-    margin: 0 auto;
+      url(../images/hotel-page/mobile-background-hero-hotel-room.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -89,8 +106,48 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../images/restaurant-page/desktop-background-hero-restaurant@2x.jpg);
+        url(../images/hotel-page/mobile-background-hero-hotel-room@2x.jpg);
     }
+    @media screen and (min-width: 480px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hotel-page/tablet-background-hero-hotel-room.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hotel-page/tablet-background-hero-hotel-room@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hotel-page/desktop-background-hero-hotel-room.jpg);
+      max-width: 1280px;
+      margin: 0 auto;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hotel-page/desktop-background-hero-hotel-room@2x.jpg);
+      }
+    }
+  }
+
+  &--room {
+    background-image: none;
   }
 
   &__title {
@@ -126,6 +183,18 @@
     }
   }
 
+  &__subtitle--hotel {
+    margin-bottom: 178px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 226px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 249px;
+    }
+  }
+
   &__slogan {
     font-family: 'Times New Roman';
     font-weight: 700;
@@ -144,7 +213,7 @@
   &__address {
     display: flex;
     width: 287px;
-    padding: 8px 8px 8px 16px;
+    padding: 8px;
     border: 1px solid var(--color-accent-yellow);
     top: 64px;
     right: 15px;
@@ -159,6 +228,13 @@
 
     @media screen and (min-width: 1280px) {
       left: 85px;
+    }
+  }
+
+  &__address--room {
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+      bottom: 24px;
     }
   }
 
@@ -199,6 +275,17 @@
     }
   }
 
+  &__button-room {
+    position: absolute;
+    bottom: 40px;
+    right: 73px;
+
+    @media screen and (min-width: 1024px) {
+      right: 47px;
+      bottom: 64px;
+    }
+  }
+
   &__container {
     padding-top: 181px;
     padding-bottom: 102px;
@@ -211,6 +298,45 @@
 
     @media screen and (min-width: 1280px) {
       padding-top: 164px;
+    }
+  }
+
+  &__container--room {
+    padding-bottom: 118px;
+    padding-top: 381px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 468px;
+      padding-bottom: 104px;
+    }
+  }
+
+  &__room-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__room-description {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    width: 325px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      margin-bottom: 0;
     }
   }
 }

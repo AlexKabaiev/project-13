@@ -16,13 +16,25 @@
     }
   }
 
-  &__item {
-  }
-
   &__link {
+    display: block;
+    height: 24px;
   }
 
   &__logo {
     fill: var(--color-accent-yellow);
+  }
+
+  &__list--room {
+    flex-direction: column;
+    gap: 8px;
+    left: 14px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 20px;
+      flex-direction: row;
+      bottom: 38px;
+      left: 372px;
+    }
   }
 }
