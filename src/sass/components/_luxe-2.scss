@@ -1,5 +1,5 @@
 .hotel-room__luxe {
-  background: #fffdee;
+  background: var(--color-background-lemon);
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
@@ -13,7 +13,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: var(--color-gray);
 }
 
 .hotel-room__logo {
@@ -23,7 +23,7 @@
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: var(--color-logo);
   margin-top: 8px;
 }
 
@@ -34,7 +34,7 @@
   font-size: 24px;
   line-height: 1.17px;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: var(--color-black);
   margin-top: 12px;
 }
 
@@ -163,17 +163,17 @@
   // outline: 1px solid red;
 }
 
-.swiper-wrapper__room {
+.room-hotel__list {
   height: 194px;
   margin-left: -120px;
 }
 .room-hotel__item{
   margin-right: 16px;
 }
-.room-hotel__list {
-  margin-bottom: 16px;
-  position: relative;
-}
+// .room-hotel__list {
+//   margin-bottom: 16px;
+//   position: relative;
+// }
 
 .room-hotel__foto {
   background: #DADADA;
@@ -185,6 +185,7 @@
   justify-content: space-between;
   margin-left: 15px;
   margin-right: auto;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -196,23 +197,34 @@
   border: none;
   padding: 0;
   transition: color .25s cubic-bezier(.4, 0, .2, 1);
+  cursor: pointer;
+
+  &:hover .room-hotel__button-icon,
+  &:focus .room-hotel__button-icon {
+    fill: var(--color-accent-yellow);
+  }
+  
 }
 
 .room-hotel__button-icon {
-  fill: #000000;
+  fill: var(--color-black);
   width: 100%;
   height: 100%;
+  
 }
 
 @media screen and (min-width: 1024px){
 .swiper__room {
   width: 428px;
+  height: 258px;
   margin-left: 0;
   margin-bottom: 8px;
 }
 .room-hotel__button-wrapper {
   margin-left: auto;
   margin-right: 0;
+  margin-top: 32px;
+  
 }
 .room-hotel__item {
   margin-right: 40px;
@@ -233,5 +245,16 @@
 
 .swiper-wrapper__room {
   height: 254px;
+}
+.room-hotel__list {
+  height: 254px;
+  margin-left: 0;
+}
+
+.room-hotel__item {
+  margin-right: 16px;
+}
+.room-hotel__foto {
+  margin-left: -146px;
 }
 }
