@@ -118,7 +118,7 @@
 
   .hotel-button__detals:not(:last-child) {
     margin-bottom: 16px;
-    margin-top: 89px;
+    margin-top: -24%;
   }
 }
 
@@ -135,7 +135,103 @@
   .hotel-room__text {
     font-size: 16px;
     margin-top: 24px;
-    margin-bottom: 176px;
+    margin-bottom: 188px;
     width: 439px;
   }
+  .hotel-button__detals {
+    margin-bottom: 142px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.swiper__room {
+  width: 284px;
+  height: 246px;
+  margin-bottom: 16px;
+  margin-left: -15px;
+
+  // outline: 1px solid red;
+}
+
+.swiper-wrapper__room {
+  height: 194px;
+  margin-left: -120px;
+}
+.room-hotel__item{
+  margin-right: 16px;
+}
+.room-hotel__list {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.room-hotel__foto {
+  background: #DADADA;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.room-hotel__button-wrapper {
+  width: 98px;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: auto;
+  display: flex;
+}
+
+.room-hotel__button-swipe {
+  width: 32px;
+  height: 32px;
+  color: var(--color-white);
+  background: none;
+  border: none;
+  padding: 0;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.room-hotel__button-icon {
+  fill: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px){
+.swiper__room {
+  width: 428px;
+  margin-left: 0;
+  margin-bottom: 8px;
+}
+.room-hotel__button-wrapper {
+  margin-left: auto;
+  margin-right: 0;
+}
+.room-hotel__item {
+  margin-right: 40px;
+}
+.swiper-wrapper__room {
+  height: 194px;
+  margin-left: 0px;
+}
+}
+
+@media screen and (min-width: 1280px){
+.swiper__room {
+  width: 548px;
+  height: 326px;
+  margin-bottom: 13px;
+   
+}
+
+.swiper-wrapper__room {
+  height: 254px;
+}
 }
