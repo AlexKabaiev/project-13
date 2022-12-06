@@ -1,10 +1,8 @@
-// body{
-//     position: absolute;
-// }
+
 .header {
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 1;
   height: 143px;
   background: linear-gradient(
     180deg,
@@ -17,8 +15,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  // position: fixed;
-  z-index: 99;
+  
 }
 
 .logo {
@@ -39,7 +36,7 @@
 .site-nav {
   display: flex;
   padding-top: 28px;
-  // gap: 20px;
+  
 }
 
 .site-nav__item {

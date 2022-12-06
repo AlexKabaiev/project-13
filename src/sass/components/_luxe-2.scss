@@ -62,8 +62,12 @@
 .hotel-button__detals {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hotel-button__detals:not(:last-child) {
