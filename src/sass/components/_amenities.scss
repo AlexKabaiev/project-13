@@ -13,11 +13,40 @@
              padding-bottom: 48px;
          }
 }
+.amenities__line {
+    position: relative;
+}
 @media screen and (min-width: 1280px) {
-    .amenities__line {
-        background-image: repeating-linear-gradient(to right, #FFFDEE, #FFFDEE 322px, #BABABA66 1px, #BABABA66 323px);
-
+.vert-line {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    right: 50%;
     }
+
+.vert-line::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    left: 302px;
+ }
+.vert-line::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    right: 302px;
+ }
 }
 .amenities__title {
     font-family: 'Times New Roman';
