@@ -75,7 +75,7 @@
     display: block;
     max-width: 244px;
     margin-bottom: 32px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 414px){
         width: 244px;
         height: 322px;
     }
@@ -91,6 +91,7 @@
         min-width: 460px;
         min-height: 574px;
         border-radius: 2px;
+        right:180px;
 }
 }
 .kitchen__tumb--meat {
