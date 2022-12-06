@@ -1,19 +1,11 @@
 .details-hotel {
+    background-color: var(--color-background-lemon);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main-page/mobile-background-hotel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    &__container {
-        position: relative;
-        overflow: hidden;
-        background-color: var(--color-background-lemon);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main-page/mobile-background-hotel.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-top: 24px;
-        padding-bottom: 40px;
-        padding-left: 0;
-        padding-right: 0;
-
-        @media (max-width: 1023) and (min-device-pixel-ratio: 2),
+    @media (max-width: 1023) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -43,6 +35,15 @@
                     url('../images/main-page/desktop-background-hotel@2x.jpg');
             }
         }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+        
+        padding-top: 24px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
 
         @media screen and (min-width: 1024px) {
             padding-top: 48px;
