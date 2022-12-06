@@ -1,4 +1,157 @@
 .hero {
+  background-color: var(--color-background);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main-page/mobile-background-hero-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/mobile-background-hero-main@2x.jpg);
+  }
+  @media screen and (min-width: 414px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/tablet-background-hero-main.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/tablet-background-hero-main@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/desktop-background-hero-main.jpg);
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/desktop-background-hero-main@2x.jpg);
+    }
+  }
+
+  &--restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-page/mobile-background-hero-restaurant.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/mobile-background-hero-restaurant@2x.jpg);
+    }
+    @media screen and (min-width: 414px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/tablet-background-hero-restaurant.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/restaurant-page/tablet-background-hero-restaurant@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant-page/desktop-background-hero-restaurant.jpg);
+      max-width: 1280px;
+      margin: 0 auto;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/restaurant-page/desktop-background-hero-restaurant@2x.jpg);
+      }
+    }
+  }
+
+  &--hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hotel-page/mobile-background-hero-hotel-room.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hotel-page/mobile-background-hero-hotel-room@2x.jpg);
+    }
+    @media screen and (min-width: 414px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hotel-page/tablet-background-hero-hotel-room.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hotel-page/tablet-background-hero-hotel-room@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hotel-page/desktop-background-hero-hotel-room.jpg);
+      max-width: 1280px;
+      margin: 0 auto;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hotel-page/desktop-background-hero-hotel-room@2x.jpg);
+      }
+    }
+  }
+
+  &--room {
+    background-image: none;
+    background-color: var(--color-background-lemon);
+    position: relative;
+  }
+
   &__title {
     font-family: 'Film P3';
     font-weight: 700;
@@ -32,6 +185,18 @@
     }
   }
 
+  &__subtitle--hotel {
+    margin-bottom: 178px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 226px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 249px;
+    }
+  }
+
   &__slogan {
     font-family: 'Times New Roman';
     font-weight: 700;
@@ -50,7 +215,7 @@
   &__address {
     display: flex;
     width: 287px;
-    padding: 8px 8px 8px 16px;
+    padding: 8px;
     border: 1px solid var(--color-accent-yellow);
     top: 64px;
     right: 15px;
@@ -65,6 +230,18 @@
 
     @media screen and (min-width: 1280px) {
       left: 85px;
+    }
+  }
+
+  &__address--room {
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+      bottom: 24px;
+      z-index: 3;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
 
@@ -105,63 +282,162 @@
     }
   }
 
+  &__button-room {
+    position: absolute;
+    bottom: 40px;
+    right: 73px;
+    z-index: 3;
+
+    @media screen and (min-width: 1024px) {
+      right: 47px;
+      bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      right: 85px;
+      bottom: 66px;
+      z-index: 2;
+    }
+  }
+
   &__container {
     padding-top: 181px;
     padding-bottom: 102px;
     position: relative;
-    background-color: var(--color-background);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main-page/mobile-background-hero-main.jpg);
-    background-position: center;
-    background-size: cover;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/main-page/mobile-background-hero-main@2x.jpg);
-    }
 
     @media screen and (min-width: 1024px) {
       padding-top: 188px;
       padding-bottom: 257px;
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/main-page/tablet-background-hero-main.jpg);
+    }
 
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/main-page/tablet-background-hero-main@2x.jpg);
-      }
+    @media screen and (min-width: 1280px) {
+      padding-top: 164px;
+    }
+  }
 
-      @media screen and (min-width: 1280px) {
-        padding-top: 164px;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/main-page/desktop-background-hero-main.jpg);
+  &__container--room {
+    position: relative;
+    width: 414px;
+    margin: 0 auto;
 
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/main-page/desktop-background-hero-main@2x.jpg);
-        }
-      }
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
+
+  &__room-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    margin-bottom: 14px;
+    position: absolute;
+    bottom: 193px;
+    left: 15px;
+    z-index: 3;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+      font-size: 36px;
+      bottom: 211px;
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 155px;
+      left: 85px;
+    }
+  }
+
+  &__room-description {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    width: 325px;
+    position: absolute;
+    z-index: 3;
+    bottom: 118px;
+    left: 15px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      margin-bottom: 0;
+      width: 400px;
+      bottom: 104px;
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 48px;
+      left: 85px;
+    }
+  }
+
+  &__button-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    fill: var(--color-accent-yellow);
+    display: block;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  &__button-arrow--left {
+    left: 15px;
+
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 85px;
+    }
+  }
+
+  &__button-arrow--right {
+    right: 15px;
+
+    @media screen and (min-width: 1024px) {
+      right: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      right: 85px;
+    }
+  }
+
+  &__room-img {
+    width: 414px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
     }
   }
 }

@@ -1,11 +1,12 @@
 .footer {
+    background-color: var(--color-background-footer);
     &__container{
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: 40px 30px;
-        background-color: var(--color-background-footer);
+        // background-color: var(--color-background-footer);
         gap: 85px;
         @media screen and (min-width: 1024px){
             padding: 80px 122px 80px 154px;
