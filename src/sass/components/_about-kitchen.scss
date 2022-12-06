@@ -49,6 +49,7 @@
     }
 .amenities__line {
     background-image: repeating-linear-gradient(to right, #FFFDEE, #FFFDEE 322px, #BABABA66 1px, #BABABA66 323px);
+    position: relative;
 }
 .logo-mimino {
     font-family: "Film P3";
@@ -84,14 +85,14 @@
         min-width: 400px;
         min-height: 524px;
         top: -32px;
-        right: 112px;
+        right: 27px;
     }
     @media screen and (min-width: 1280px) {
         top: -33px;
         min-width: 460px;
         min-height: 574px;
         border-radius: 2px;
-        right:180px;
+        right: 95px;
 }
 }
 .kitchen__tumb--meat {
