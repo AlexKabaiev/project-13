@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".select-persons-table");new Choices(e,{searchEnabled:!1,itemSelectText:""})})();(()=>{const e=document.querySelector(".select-date-table");new Choices(e,{searchEnabled:!1,itemSelectText:""})})(),document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".tel-mask-table");IMask(e,{mask:"+{38} (000) 000-00-00",lazy:!1})}));
+//# sourceMappingURL=restaurant.96c11e8b.js.map
