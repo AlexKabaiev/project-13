@@ -12,29 +12,29 @@
                 url('../images/main-page/mobile-background-hotel@2x.jpg');
         }
 
-        @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../images/main-page/tablet-background-hotel.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/main-page/tablet-background-hotel.jpg');
-
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url('../images/main-page/tablet-background-hotel@2x.jpg');
-            }
+                url('../images/main-page/tablet-background-hotel@2x.jpg');
         }
+    }
 
-        @media (min-width: 1280px) {
+    @media (min-width: 1280px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../images/main-page/desktop-background-hotel.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/main-page/desktop-background-hotel.jpg');
-
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url('../images/main-page/desktop-background-hotel@2x.jpg');
-            }
+                url('../images/main-page/desktop-background-hotel@2x.jpg');
         }
+    }
 
     &__container {
         position: relative;
