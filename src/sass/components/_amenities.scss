@@ -1,5 +1,5 @@
 .amenities {
-    
+     position: relative;
     background-color: var(--color-background-lemon);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -13,11 +13,9 @@
              padding-bottom: 48px;
          }
 }
-.amenities__line {
-    position: relative;
-}
+
 @media screen and (min-width: 1280px) {
-.vert-line {
+.amenities__line {
     position: absolute;
     display: block;
     top: 0;
@@ -27,7 +25,7 @@
     right: 50%;
     }
 
-.vert-line::before {
+.amenities__line::before {
     content: '';
     position: absolute;
     display: block;
@@ -37,7 +35,7 @@
     border: 1px solid rgba(186, 186, 186, 0.4);
     left: 302px;
  }
-.vert-line::after {
+.amenities__line::after {
     content: '';
     position: absolute;
     display: block;
