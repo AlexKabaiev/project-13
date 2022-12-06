@@ -30,7 +30,6 @@
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/desktop-background-hero-main.jpg);
-    max-width: 1280px;
     margin: 0 auto;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -80,7 +79,6 @@
           rgba(0, 0, 0, 0.65)
         ),
         url(../images/restaurant-page/desktop-background-hero-restaurant.jpg);
-      max-width: 1280px;
       margin: 0 auto;
 
       @media screen and (min-device-pixel-ratio: 2),
@@ -131,7 +129,6 @@
           rgba(0, 0, 0, 0.65)
         ),
         url(../images/hotel-page/desktop-background-hero-hotel-room.jpg);
-      max-width: 1280px;
       margin: 0 auto;
 
       @media screen and (min-device-pixel-ratio: 2),
@@ -167,6 +164,11 @@
 
     @media screen and (min-width: 1024px) {
       font-size: 128px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
     }
   }
 
@@ -182,18 +184,26 @@
 
     @media screen and (min-width: 1024px) {
       font-size: 20px;
+      margin-bottom: 56px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 64px;
     }
   }
 
   &__subtitle--hotel {
     margin-bottom: 178px;
+    padding-top: 8px;
 
     @media screen and (min-width: 1024px) {
-      margin-bottom: 226px;
+      margin-bottom: 81px;
+      padding-top: 16px;
     }
 
     @media screen and (min-width: 1280px) {
-      margin-bottom: 249px;
+      margin-bottom: 105px;
+      padding-top: 0;
     }
   }
 
@@ -301,16 +311,19 @@
   }
 
   &__container {
+    max-width: 414px;
     padding-top: 181px;
     padding-bottom: 102px;
     position: relative;
 
     @media screen and (min-width: 1024px) {
+      max-width: 1024px;
       padding-top: 188px;
       padding-bottom: 257px;
     }
 
     @media screen and (min-width: 1280px) {
+      max-width: 1280px;
       padding-top: 164px;
     }
   }
