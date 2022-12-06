@@ -1,6 +1,6 @@
 //--------------------------swiper--------------------------------------
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-details-hotel', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
