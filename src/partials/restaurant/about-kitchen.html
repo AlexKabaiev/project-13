@@ -1,33 +1,124 @@
-<section class="section kitchen">
+<section class="section kitchen amenities__line">
     <div class="container">
         <h2 hidden="">About our restaurant</h2>
         <h3 class="kitchen__description">Amet minim mollit non</h3>
-        <a class="logo" lang="en" href=".//index.html">MIMIHO</a>
+        <a class="logo-mimino" lang="en" href="#">MIMIHO</a>
         <p class="kitchen__tehnologies">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
             Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </p>
-            <div class="kitchen__tumb kitchen__tumb--kitchen">
-                <img class="kitchen__photo" srcset="#" src="#" alt="Сooking process">
+        <div class="kitchen__processes">
+            <div class="kitchen__tumb--kitchen">
+                <img 
+                    class="kitchen__photo" 
+                    srcset="./images/restaurant-page/mobile-kitchen1.jpg 244w,
+                            ./images/restaurant-page/mobile-kitchen1@2x.jpg 488w,
+                            ./images/restaurant-page/tablet-kitchen1.jpg 400w,
+                            ./images/restaurant-page/tablet-kitchen1@2x.jpg 800w,
+                            ./images/restaurant-page/desktop-kitchen1.jpg 460w,
+                            ./images/restaurant-page/desktop-kitchen1@2x.jpg 920w"
+                    sizes="(min-width: 1280px) 50vw, (min-width: 1024px) 50vw, (max-width: 1023px) 100vw"
+                    src="./images/restaurant-page/mobile-kitchen1.jpg" 
+                    alt="Процес приготування">
             </div>
+        </div>
         <div class="kitchen__principles">
-            <div class="kitchen__tumb kitchen__tumb--meat">
-                <img class="kitchen__photo" srcset="#" src="#" alt="Meat preparation">
+            <div class="kitchen__tumb--meat">
+                <img 
+                class="kitchen__photo"
+                srcset="./images/restaurant-page/mobile-kitchen2.jpg 244w,
+                        ./images/restaurant-page/mobile-kitchen2@2x.jpg 488w,
+                        ./images/restaurant-page/tablet-kitchen2.jpg 400w,
+                        ./images/restaurant-page/tablet-kitchen2@2x.jpg 800w,
+                        ./images/restaurant-page/desktop-kitchen2.jpg 460w,
+                        ./images/restaurant-page/desktop-kitchen2@2x.jpg 920w"
+                sizes="(min-width: 1280px) 50vw, (min-width: 1024px) 50vw, (max-width: 1023px) 100vw"
+                src="./images/restaurant-page/mobile-kitchen2.jpg" 
+                alt="Підготовка м'яса">
             </div>
             <p class="kitchen__principles-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                 sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
             </p>
         </div>
-        <div class="kitchen__buttons">
-        <button class="slide-button" type="button">
-            <svg class="slide-button__icon">
-                <use href="./images/icons.svg#icon-arrow-left" width="32px" height="32px"></use>
-            </svg>
-        </button>
-        <button class="slide-button--mirror" type="button">
-            <svg class="slide-button__icon">
-                <use href="./images/icons.svg#icon-arrow-right" width="32px" height="32px"></use>
-            </svg>
-        </button>
+        <div class="carousel__tumb">
+        <div id="carousel" class="carousel">
+            <div class="gallery">
+              <ul class="carousel__list">
+                <li class="carousel__item"><img
+                    class="carousel__img"
+                    srcset="./images/restaurant-page/mobile-kitchen-slider1.jpg 245w,
+                            ./images/restaurant-page/mobile-kitchen-slider1@2x.jpg 490w"
+                            sizes="245vw"
+                    src="./images/restaurant-page/mobile-kitchen-slider1.jpg"
+                    alt="Розкатування тіста">
+                </li>
+                <li class="carousel__item"><img
+                    class="carousel__img"
+                    srcset="./images/restaurant-page/mobile-kitchen-slider2.jpg 245w,
+                            ./images/restaurant-page/mobile-kitchen-slider2@2x.jpg 490w"
+                            sizes="245vw"
+                    src="./images/restaurant-page/mobile-kitchen-slider2.jpg"
+                    alt="Хінкалі на дерев'яній дошці">
+                </li>
+                <li class="carousel__item"><img
+                    class="carousel__img"
+                    srcset="./images/restaurant-page/mobile-kitchen-slider1.jpg 245w,
+                            ./images/restaurant-page/mobile-kitchen-slider1@2x.jpg 490w"
+                            sizes="245vw"
+                    src="./images/restaurant-page/mobile-kitchen-slider1.jpg"
+                    alt="Розкатування тіста">
+                </li>
+                <li class="carousel__item"><img
+                    class="carousel__img"
+                    srcset="./images/restaurant-page/mobile-kitchen-slider2.jpg 245w,
+                            ./images/restaurant-page/mobile-kitchen-slider2@2x.jpg 490w"
+                            sizes="245vw"
+                    src="./images/restaurant-page/mobile-kitchen-slider2.jpg"
+                    alt="Хінкалі на дерев'яній дошці">
+                </li>
+              </ul>
+            </div>
+            <div class="carousel__buttons">
+                <button class="arrow prev" type="button">
+                    <svg class="slide-button__icon">
+                    <use href="./images/icons.svg#icon-arrow-left" width="32px" height="32px"></use>
+                    </svg>
+                </button>
+                <button class="arrow--mirror next" type="button">
+                    <svg class="slide-button__icon">
+                    <use href="./images/icons.svg#icon-arrow-right" width="32px" height="32px"></use>
+                    </svg>
+                </button>
+            </div>
+          </div>
         </div>
     </div>
+<script>
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+      i++;
+    }
+
+    let width = 269;
+    let count = 1;
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0;
+
+    carousel.querySelector('.prev').onclick = function() {
+      position += width * count;
+      position = Math.min(position, 0)
+      list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.next').onclick = function() {
+      position -= width * count;
+      position = Math.max(position, -width * (listElems.length - count));
+      list.style.marginLeft = position + 'px';
+    };
+</script>
 </section>
+    
