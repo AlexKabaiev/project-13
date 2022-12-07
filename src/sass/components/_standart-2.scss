@@ -1,0 +1,41 @@
+.hotel-room__standart-two {
+  position: relative;
+
+  &--line {
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      display: block;
+      top: 0;
+      width: 1;
+      height: 100%;
+      left: 50%;
+      border: 1px solid rgba(186, 186, 186, 0.4);
+    }
+
+    &::after {
+      @media screen and (min-width: 1280px) {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 100%;
+        left: 297px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+      }
+    }
+
+    &::before {
+      @media screen and (min-width: 1280px) {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 100%;
+        right: 299px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+      }
+    }
+  }
+}
