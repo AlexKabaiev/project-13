@@ -16,6 +16,8 @@
     transition-property: background-color, border-color;
     transition-duration: var(--animation-time);
     transition-timing-function: var(--bezier-function);
+
+    cursor: pointer;
     
     &:hover,
     &:focus {

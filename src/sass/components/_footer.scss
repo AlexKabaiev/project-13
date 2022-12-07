@@ -6,7 +6,7 @@
         align-items: center;
         justify-content: space-around;
         padding: 40px 30px;
-        // background-color: var(--color-background-footer);
+
         gap: 85px;
         @media screen and (min-width: 1024px){
             padding: 80px 122px 80px 154px;
@@ -89,6 +89,16 @@
         gap: 16px;
         @media screen and (max-width: 1023px){
             margin-bottom: 32px;
+        }
+    }
+    &__item {
+        transition-property: background-color;
+        transition-duration: var(--animation-time);
+        transition-timing-function: var(--bezier-function);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--color-white);
         }
     }
     &__navigation-link{
