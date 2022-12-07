@@ -1,0 +1,2 @@
+new Swiper(".swiper-details-hotel",{direction:"horizontal",loop:!0,centeredSlides:!0,breakpoints:{414:{slidesPerView:1.29,spaceBetween:20},1024:{slidesPerView:"2",spaceBetween:34},1280:{slidesPerView:"2.3",spaceBetween:86}},pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next1",prevEl:".swiper-button-prev1"},scrollbar:{el:".swiper-scrollbar"}});
+//# sourceMappingURL=index.03f42875.js.map
