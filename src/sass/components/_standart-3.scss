@@ -2,6 +2,56 @@
   background: var(--color-background-dark-lemon);
   padding-top: 32px;
   padding-bottom: 32px;
+
+  &--line {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 1;
+    height: 100%;
+    left: 140px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+
+    @media screen and (min-width: 1024px) {
+      left: 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      width: 1;
+      height: 100%;
+      left: 132px;
+      border: 1px solid rgba(186, 186, 186, 0.4);
+
+      @media screen and (min-width: 1024px) {
+        left: 232px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        left: 297px;
+      }
+    }
+
+    &::before {
+      @media screen and (min-width: 1024px) {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 1;
+        height: 100%;
+        right: 235px;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+      }
+
+      @media screen and (min-width: 1280px) {
+        right: 299px;
+      }
+    }
+  }
 }
 .hotel-room__title--standart {
   font-family: 'Times New Roman';
