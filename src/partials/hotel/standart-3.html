@@ -38,12 +38,68 @@
         class="hotel-room__img--standart"
       />
     </picture>
-    <button
-      class="button hotel-button__detals"
-      onclick="window.location.href = './room.html';"
-    >
-      Детальніше
-    </button>
+
+    <div class="swiper swiper__room--standart">
+      <ul class="swiper-wrapper room-hotel__list">
+        <li class="swiper-slide room-hotel__item">
+          <picture>
+            <source
+              srcset="./images/hotel-page/mobile-hotel-slider2.jpg 1x, ./images/hotel-page/mobile-hotel-slider2@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <source
+              srcset="./images/hotel-page/tablet-hotel-slider2.jpg 1x, ./images/hotel-page/tablet-hotel-slider2@2x.jpg 2x"
+              media="(max-width: 1279px)">
+            <source
+              srcset="./images/hotel-page/desktop-hotel-slider2.jpg 1x, ./images/hotel-page/desktop-hotel-slider2@2x.jpg 2x"
+              media="(min-width: 1280px)">
+            <img class="room-hotel__foto" src="./images/hotel-page/mobile-hotel-slider2.jpg" alt="Фото інтер'єру кімнати">
+          </picture>
+        </li>
+        <li class="swiper-slide room-hotel__item">
+          <picture>
+            <source
+              srcset="./images/hotel-page/mobile-hotel-slider1.jpg 1x, ./images/hotel-page/mobile-hotel-slider1@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <source
+              srcset="./images/hotel-page/tablet-hotel-slider1.jpg 1x, ./images/hotel-page/tablet-hotel-slider1@2x.jpg 2x"
+              media="(max-width: 1279px)">
+            <source
+              srcset="./images/hotel-page/desktop-hotel-slider1.jpg 1x, ./images/hotel-page/desktop-hotel-slider1@2x.jpg 2x"
+              media="(min-width: 1280px)">
+            <img class="room-hotel__foto" src="./images/hotel-page/mobile-hotel-slider1.jpg" alt="Фото інтер'єру кімнати">
+          </picture>
+        </li>
+        <li class="swiper-slide room-hotel__item">
+          <picture>
+            <source
+              srcset="./images/hotel-page/mobile-hotel-slider2.jpg 1x, ./images/hotel-page/mobile-hotel-slider2@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <source
+              srcset="./images/hotel-page/tablet-hotel-slider2.jpg 1x, ./images/hotel-page/tablet-hotel-slider2@2x.jpg 2x"
+              media="(max-width: 1279px)">
+            <source
+              srcset="./images/hotel-page/desktop-hotel-slider2.jpg 1x, ./images/hotel-page/desktop-hotel-slider2@2x.jpg 2x"
+              media="(min-width: 1280px)">
+            <img class="room-hotel__foto" src="./images/hotel-page/mobile-hotel-slider2.jpg" alt="Фото інтер'єру кімнати">
+          </picture>
+        </li>
+      </ul>
+      <div class="room-hotel__button-wrapper--standart">
+        <button class="swiper-button__room-prev1 room-hotel__button-swipe" type="button">
+          <svg class="room-hotel__button-icon">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-button__room-next1 room-hotel__button-swipe" type="button">
+          <svg class="room-hotel__button-icon">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <button class="button hotel-button__detals--standart" onclick="window.location.href = './room.html';"> Детальніше </button>
     <button
       type="button"
       class="button hotel-button__detals--standart"

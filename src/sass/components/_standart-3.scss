@@ -1,5 +1,5 @@
 .hotel-room__standart {
-  background: #f0ecd6;
+  background: var(--color-background-dark-lemon);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: var(--color-gray);
 }
 
 .hotel-room__logo--standart {
@@ -19,7 +19,7 @@
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: var(--color-logo);
   margin-top: 8px;
 }
 
@@ -30,7 +30,7 @@
   font-size: 24px;
   line-height: 1.17px;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: var(--color-black);
   margin-top: 12px;
 }
 
@@ -51,15 +51,19 @@
 
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .hotel-button__detals--standart {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hotel-button__detals--standart:not(:last-child) {
@@ -119,7 +123,7 @@
 
   .hotel-button__detals--standart:not(:last-child) {
     margin-bottom: 16px;
-    margin-top: 89px;
+    margin-top: -24%;
   }
 }
 
@@ -139,4 +143,58 @@
     margin-bottom: 176px;
     width: 439px;
   }
+    .hotel-button__detals--standart {
+      margin-bottom: 142px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+}
+
+
+
+
+
+.swiper__room--standart{
+  width: 284px;
+  height: 246px;
+  margin-bottom: 16px;
+  margin-right: -15px;
+  margin-left: auto;
+}
+
+
+
+.room-hotel__button-wrapper--standart {
+  width: 98px;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  
+}
+
+@media screen and (min-width: 1024px) {
+.swiper__room--standart {
+    width: 428px;
+    height: 258px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+.room-hotel__button-wrapper--standart {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper__room--standart {
+    width: 548px;
+    height: 326px;
+    margin-bottom: 13px;
+
+  }
+
+
 }
