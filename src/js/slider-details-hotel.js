@@ -15,12 +15,12 @@ const swiper = new Swiper('.swiper-details-hotel', {
     },
     // when window width is >= 
     1024: {
-      slidesPerView: '2',
+      slidesPerView: 'auto',
       spaceBetween: 34,
     },
     // when window width is >=
     1280: {
-      slidesPerView: '2.3',
+      slidesPerView: 'auto',
       spaceBetween: 86
     }
   },
