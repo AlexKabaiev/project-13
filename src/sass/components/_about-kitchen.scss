@@ -234,6 +234,7 @@
     padding: 0;
     fill: var(--color-black);
     transition: fill var(--animation-time) var(--bezier-function);
+    cursor: pointer;
 
     &--mirror {
         width: 32px;
@@ -243,6 +244,7 @@
         padding: 0;
         fill: var(--color-black);
         transition: fill var(--animation-time) var(--bezier-function);
+        cursor: pointer;
 
         &:hover, &:focus {
             fill: var(--color-accent-yellow);
