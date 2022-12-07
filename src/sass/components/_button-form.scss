@@ -20,6 +20,7 @@
     transition-duration: var(--animation-time);
     transition-timing-function: var(--bezier-function);
 
+
     &:hover,
     &:focus {
         background-color: var(--color-accent-yellow);
