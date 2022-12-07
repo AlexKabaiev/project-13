@@ -267,11 +267,12 @@
 
 }
 
-.swiper {
+div.swiper-details-hotel {
     width: 374px;
     height: 318px;
     margin-left: 0;
     margin-bottom: 32px;
+    overflow: hidden;
 
     @media screen and (min-width: 1024px) {
             width: 662px;
@@ -282,10 +283,10 @@
         }
 }
 
-.swiper-wrapper {
+.details-hotel__list {
     height: 270px;
 }
 
-.swiper-slide {
+.details-hotel__item  {
     width: auto;
 }

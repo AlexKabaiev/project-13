@@ -1,10 +1,10 @@
 //--------------------------swiper--------------------------------------
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-details-hotel', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  centeredSlides: true,
+ centeredSlides: true,
   //
 
   breakpoints: {
@@ -15,12 +15,12 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 
     1024: {
-      slidesPerView: 'auto',
+      slidesPerView: '2',
       spaceBetween: 34,
     },
     // when window width is >=
     1280: {
-      slidesPerView: 'auto',
+      slidesPerView: '2.3',
       spaceBetween: 86
     }
   },

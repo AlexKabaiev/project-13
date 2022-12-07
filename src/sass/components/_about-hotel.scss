@@ -114,7 +114,7 @@
             }
     @media (min-width: 1280px) {
             max-width: 460px;
-            left: 95px;
+          left: 95px;
         }
 }
 .interior__item:nth-child(2n) .interior__img {
@@ -136,7 +136,7 @@
     color: var(--color-brown);
     @media (min-width: 1024px) {
         margin-right: 48px;
-        width: 312px;
+        width: 262px;
      }
     @media (min-width: 1280px) {
         transform: translateY(-40%);
@@ -149,62 +149,37 @@
         }
     }
 .interior__slider {
+   position: relative;
+}
+.interior__slider-wrapper {
     position: relative;
-    justify-content: center;
-    @media (min-width: 1024px) {
+    clip-path: inset(-100vw 0 -100vw 0);
+@media (min-width: 1024px) {
     position: absolute;
-    transform: translateY(-28px);
+    top: -28px;
+    width: 530px;
+    clip-path: inset(-100vw 0 -100vw 0);
+
     }
-    @media (min-width: 1280px) {
-   transform: translateY(-167px);
-        }
+@media (min-width: 1280px) {
+    top: -167px;
+    width: 650px;
+    clip-path: inset(-100vw 0 -100vw 0);
+}
 }
 
-.interior__slide-list {
-    display: flex;
-    position: relative;
-    margin-left: -15px;
-    margin-right: -15px;
-    clip-path: inset(-100vw -100vw -100vw 0);
-    margin-bottom: 20px;
-    justify-content: center;
-    @media (min-width: 1024px) {
-    justify-content: flex-start;
-    margin-bottom: 32px;
-    margin-left: 0;
-    clip-path: inset(-100vw);
-    }
-}    
-.interior__slide-item {
-    position: relative; 
-}
 .interior__slide-img {
-    display: block;
-    margin: 0 auto;
+    margin: 0 0 32px 0;
     max-width: 245px;
     background: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     @media (min-width: 1024px) {
     max-width: 194px;
+    
     }
     @media (min-width: 1280px) {
     max-width: 245px;
-    }
-}
-.interior__slide-item:nth-child(2n+1) .interior__slide-img {
-    position: absolute;
-    left: -265px;
-    max-width: 245px;
-    height: auto;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    @media (min-width: 1024px) {
-    max-width: 194px;
-    left: 234px;
-    }
-    @media (min-width: 1280px) {
-    max-width: 245px;
-    left: 285px;
     }
 }
 .interior__arrows {
