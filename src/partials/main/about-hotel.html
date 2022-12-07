@@ -51,9 +51,9 @@
             </li>
             </ul>
         <div class="interior__slider">
-            <div class="interior__slider-wrapper">
-        <ul class="interior__slide-list">
-            <li class="interior__slide-item">
+            <div class="interior__slider-wrapper swiper2">
+        <ul class="interior__slide-list swiper-wrapper">
+            <li class="interior__slide-item swiper-slide">
                 <picture>
                     <source media="(min-width: 1280px)" 
                     srcset="./images/main-page/desktop-hotel-slider2.jpg 1x, 
@@ -68,8 +68,9 @@
                         src="./images/main-page//mobile-hotel-slider2.jpg" width="245" 
                         alt="bedroom" 
                         class="interior__slide-img">
+                </picture>
                 </li>
-            <li class="interior__slide-item">
+            <li class="interior__slide-item swiper-slide">
                 <picture>
                     <source media="(min-width: 1280px)" 
                     srcset="./images/main-page/desktop-hotel-slider1.jpg 1x, 
@@ -84,10 +85,11 @@
                         src="./images/main-page//mobile-hotel-slider1.jpg" width="245" 
                         alt="reception" 
                         class="interior__slide-img">
+                </picture>
             </li>
         </ul>
   <div class="interior__arrows">     
-<button class="interior__button">
+<button class="interior__button swiper-button-prev2">
     <svg class="interior__arrows">
     <use href="./images/icons.svg#icon-arrow-left" 
     width="32"
@@ -95,7 +97,7 @@
     </use>
 </svg>
 </button>
-<button class="interior__button">
+<button class="interior__button swiper-button-next2">
     <svg class="interior__arrows">
         <use href="./images/icons.svg#icon-arrow-right  " width="32" class="interior__arrow-left">
         </use>
@@ -105,4 +107,5 @@
         </div>
 </div>
     </div>
+        <script type="module" src="./js/slider-about-hotel.js"></script>
 </section>
