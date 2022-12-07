@@ -72,12 +72,12 @@
             font-size: 64px;
             line-height: 1.078;
             text-align: left;
-            margin-left: 497px;
+            margin-left: 231px;
             margin-bottom: 16px;
         }
 
         @media screen and (min-width: 1280px) {
-            margin-left: 688px;
+            margin-left: 286px;
         }
     }
 
@@ -89,17 +89,17 @@
         letter-spacing: 0.02em;
         color: var(--color-white);
         margin-bottom: 20px;
-        margin-left: 201px;
+        margin-left: 143px;
 
         @media screen and (min-width: 1024px) {
             font-size: 24px;
             line-height: 1.21;
-            margin-left: 612px;
+            margin-left: 231px;
             margin-bottom: 8px;
         }
 
         @media screen and (min-width: 1280px) {
-            margin-left: 803px;
+            margin-left: 286px;
         }
     }
 
@@ -111,20 +111,20 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: #BABABA;
-        margin-left: 32px;
+        margin-left: 143px;
         margin-bottom: 48px;
 
         @media screen and (min-width: 1024px) {
             width: 549px;
             font-size: 16px;
             line-height: 1.25;
-            margin-left: 150px;
+            margin-left: 231px;
             margin-bottom: 40px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 595px;
-            margin-left: 295px;
+            margin-left: 286px;
         }
     }
 
@@ -145,10 +145,10 @@
         width: 98px;
         display: flex;
         justify-content: space-between;
-        margin-left: 276px;
+        // margin-left: 276px;
 
         @media screen and (min-width: 1024px) {
-            margin-left: 567px;
+            // margin-left: 567px;
         }
 
         @media screen and (min-width: 1280px) {
@@ -186,7 +186,7 @@
             margin-bottom: 16px;
 
             @media screen and (min-width: 1024px) {
-                bottom: 164px;
+                bottom: 185px;
                 margin-bottom: 0px;
             }
 
@@ -197,16 +197,16 @@
 
         @media screen and (min-width: 1024px) {
             position: absolute;
-            right: 47px;
+            left: 47px;
         }
 
         @media screen and (min-width: 1280px) {
-            right: 86px;
+            left: 86px;
         }
 
         &:last-child {
             @media screen and (min-width: 1024px) {
-                bottom: 100px;
+                bottom: 121px;
             }
 
             @media screen and (min-width: 1280px) {
@@ -270,16 +270,18 @@
 div.swiper-details-restaurant {
     width: 374px;
     height: 318px;
-    margin-left: 0;
+    margin-left: 40px;
     margin-bottom: 32px;
     overflow: hidden;
 
     @media screen and (min-width: 1024px) {
         width: 662px;
+        margin-left: 265px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 874px;
+        margin-left: 300px;
     }
 }
 
