@@ -126,8 +126,8 @@
     color: var(--color-brown);
     fill: currentColor;
 
-&__link:hover,
-&__link:focus {
+&:hover,
+&:focus {
     color:var(--color-accent-yellow);
     }
          @media screen and (min-width: 1024px) {
