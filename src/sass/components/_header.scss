@@ -9,13 +9,14 @@
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
   );
+  &__container {
+      display: flex;
+      justify-content: space-between;
+  
+    }
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  
-}
+
 
 .logo {
   font-family: 'Film P3';
@@ -36,46 +37,48 @@
   display: flex;
   padding-top: 28px;
   
+  &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__link {
+      display: flex;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.14;
+  
+      letter-spacing: 0.02em;
+      gap: 6px;
+  
+      color: var(--color-accent-yellow);
+      text-decoration: none;
+    }
+  
+    &__number--tel {
+      display: none;
+    }
+  
+    &__svg {
+      justify-content: center;
+      align-items: center;
+      fill: var(--color-accent-yellow);
+    }
 }
 
-.site-nav__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.site-nav__link {
-  display: flex;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.14;
-
-  letter-spacing: 0.02em;
-  gap: 6px;
-
-  color: var(--color-accent-yellow);
-  text-decoration: none;
-}
-
-.site-nav__number--tel {
-  display: none;
-}
-
-.site-nav__svg {
-  justify-content: center;
-  align-items: center;
-  fill: var(--color-accent-yellow);
-}
 
 .social {
   display: none;
+  &__svg {
+      fill: var(--color-accent-yellow);
+    }
 }
 
-.social__svg {
-  fill: var(--color-accent-yellow);
-}
+
 
 @media screen and (min-width: 414px) {
   .site-nav {
