@@ -1,0 +1,76 @@
+<section class="details-restaurant">
+    <div class="container details-restaurant__container">
+        <span class="details-restaurant__line"></span>
+        <h2 class="details-restaurant__title">Mimiho</h2>
+        <h3 class="details-restaurant__subtitle">Ресторан</h3>
+        <p class="details-restaurant__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit
+            mollit.</p>
+        <div class="swiper-details-restaurant">
+            <ul class="swiper-wrapper details-restaurant__list">
+                <li class="swiper-slide details-restaurant__item">
+                    <picture>
+                        <source
+                            srcset="./images/main-page/mobile-restaurant-details-slider1.jpg 1x, ./images/main-page/mobile-restaurant-details-slider1@2x.jpg 2x"
+                            media="(max-width: 1023px)">
+                        <source
+                            srcset="./images/main-page/tablet-restaurant-details-slider1.jpg 1x, ./images/main-page/tablet-restaurant-details-slider1@2x.jpg 2x"
+                            media="(max-width: 1279px)">
+                        <source
+                            srcset="./images/main-page/desktop-restaurant-details-slider1.jpg 1x, ./images/main-page/desktop-restaurant-details-slider1@2x.jpg 2x"
+                            media="(min-width: 1280px)">
+                        <img class="details-restaurant__foto" src="./images/main-page/mobile-restaurant-details-slider1.jpg"
+                            alt="Фото інтер'єру кімнати">
+                    </picture>
+                </li>
+                <li class="swiper-slide details-restaurant__item">
+                    <picture>
+                        <source
+                            srcset="./images/main-page/mobile-restaurant-details-slider2.jpg 1x, ./images/main-page/mobile-restaurant-details-slider2@2x.jpg 2x"
+                            media="(max-width: 1023px)">
+                        <source
+                            srcset="./images/main-page/tablet-restaurant-details-slider2.jpg 1x, ./images/main-page/tablet-restaurant-details-slider2@2x.jpg 2x"
+                            media="(max-width: 1279px)">
+                        <source
+                            srcset="./images/main-page/desktop-restaurant-details-slider2.jpg 1x, ./images/main-page/desktop-restaurant-details-slider2@2x.jpg 2x"
+                            media="(min-width: 1280px)">
+                        <img class="details-restaurant__foto" src="./images/main-page/mobile-restaurant-details-slider2.jpg"
+                            alt="Фото страви">
+                    </picture>
+                </li>
+                <li class="swiper-slide details-restaurant__item">
+                    <picture>
+                        <source
+                            srcset="./images/main-page/mobile-restaurant-details-slider1.jpg 1x, ./images/main-page/mobile-restaurant-details-slider1@2x.jpg 2x"
+                            media="(max-width: 1023px)">
+                        <source
+                            srcset="./images/main-page/tablet-restaurant-details-slider3.jpg 1x, ./images/main-page/tablet-restaurant-details-slider3@2x.jpg 2x"
+                            media="(max-width: 1279px)">
+                        <source
+                            srcset="./images/main-page/desktop-restaurant-details-slider3.jpg 1x, ./images/main-page/desktop-restaurant-details-slider3@2x.jpg 2x"
+                            media="(min-width: 1280px)">
+                        <img class="details-restaurant__foto" src="./images/main-page/mobile-restaurant-details-slider1.jpg"
+                            alt="Фото страви">
+                    </picture>
+                </li>
+            </ul>
+            <div class="details-restaurant__button-wrapper">
+                <button class="swiper-button-prev12 details-restaurant__button-swipe" type="button">
+                    <svg class="details-restaurant__button-icon">
+                        <use href="./images/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="swiper-button-next12 details-restaurant__button-swipe" type="button">
+                    <svg class="details-restaurant__button-icon">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="details-restaurant__button button-second" type="button" data-modal-table-open>Забронювати
+            столик</button>
+        <button class="details-restaurant__button button-second" onclick="window.location.href = './restaurant.html#menu';">Переглянути
+            меню</button>
+    </div>
+    <script type="module" src="./js/slider-details-restaurant.js"></script>
+</section>

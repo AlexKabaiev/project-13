@@ -4,14 +4,14 @@ const swiper = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   
   //
 
   breakpoints: {
     // адаптив для разрешения экрана
     414: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.29,
       spaceBetween: 20,
       centeredSlides: true
     },
@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper2', {
       slidesPerView: '2',
       spaceBetween: 40,
       centeredSlides: false,
-     autoHeight: true
+    //  autoHeight: true
     },
     // when window width is >=
     1280: {

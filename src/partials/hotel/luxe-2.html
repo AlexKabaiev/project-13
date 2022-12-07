@@ -11,30 +11,28 @@
     </p>
     <picture>
       <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./images/main-page/desktop-hotel-interior1.jpg    1x,
-          ./images/main-page/desktop-hotel-interior1@2x.jpg 2x
-        "
-        src="./images/main-page/desktop-hotel-interior1.jpg"
-        width="460"
-      />
-      <source
-        media="(min-width: 1024px)"
-        srcset="
-          ./images/main-page/tablet-hotel-interior1.jpg    1x,
-          ./images/main-page/tablet-hotel-interior1@2x.jpg 2x
-        "
-        src="./images/main-page/tablet-hotel-interior1.jpg"
-        width="400"
-      />
-      <img
         srcset="
           ./images/main-page/mobile-hotel-interior1.jpg    1x,
           ./images/main-page/mobile-hotel-interior1@2x.jpg 2x
         "
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/main-page/tablet-hotel-interior1.jpg    1x,
+          ./images/main-page/tablet-hotel-interior1@2x.jpg 2x
+        "
+        media="(max-width: 1279px)"
+      />
+      <source
+        srcset="
+          ./images/main-page/desktop-hotel-interior1.jpg    1x,
+          ./images/main-page/desktop-hotel-interior1@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img
         src="./images/main-page/mobile-hotel-interior1.jpg"
-        width="244"
         alt="Інтер'єр номеру"
         class="hotel-room__img"
       />
