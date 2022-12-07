@@ -232,16 +232,30 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    fill: var(--color-black);
+    transition: fill var(--animation-time) var(--bezier-function);
+
     &--mirror {
         width: 32px;
         height: 32px;
         background-color: transparent;
         border: none;
         padding: 0;
+        fill: var(--color-black);
+        transition: fill var(--animation-time) var(--bezier-function);
+
+        &:hover, &:focus {
+            fill: var(--color-accent-yellow);
+        }
     }
+
     &__icon {
         width: 32px;
         height: 32px;
+    }
+
+    &:hover, &:focus {
+        fill: var(--color-accent-yellow);
     }
 }
 .carousel__tumb {
