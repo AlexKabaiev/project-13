@@ -1,0 +1,2 @@
+new Swiper(".swiper2",{direction:"horizontal",loop:!0,breakpoints:{414:{slidesPerView:1.29,spaceBetween:20,centeredSlides:!0},1024:{slidesPerView:"2",spaceBetween:40,centeredSlides:!1},1280:{slidesPerView:"2",spaceBetween:40,centeredSlides:!1}},pagination:{el:".swiper-pagination2"},navigation:{nextEl:".swiper-button-next2",prevEl:".swiper-button-prev2"},scrollbar:{el:".swiper-scrollbar2"},grabcursor:!0,watchoverflow:!0,autoplay:{delay:2e3}});
+//# sourceMappingURL=index.bc36cfe6.js.map
