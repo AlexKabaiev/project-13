@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper-details-restaurant', {
   //
 
   breakpoints: {
-    // адаптив для разрешения экрана
+    // adaptive
     414: {
       slidesPerView: 1.29,
       spaceBetween: 20

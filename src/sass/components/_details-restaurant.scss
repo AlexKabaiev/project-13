@@ -104,7 +104,7 @@
     }
 
     &__text {
-        width: 243px;
+        width: 259px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 12px;
@@ -115,7 +115,7 @@
         margin-bottom: 48px;
 
         @media screen and (min-width: 1024px) {
-            width: 549px;
+            width: 610px;
             font-size: 16px;
             line-height: 1.25;
             margin-left: 231px;
@@ -123,7 +123,7 @@
         }
 
         @media screen and (min-width: 1280px) {
-            width: 595px;
+            width: 610px;
             margin-left: 286px;
         }
     }
@@ -145,15 +145,6 @@
         width: 98px;
         display: flex;
         justify-content: space-between;
-        // margin-left: 276px;
-
-        @media screen and (min-width: 1024px) {
-            // margin-left: 567px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            margin-left: 776px;
-        }
     }
 
     &__button-swipe {
@@ -181,17 +172,17 @@
         display: block;
         margin: 0 auto;
         position: relative;
-
+        
         &:not(:last-child) {
             margin-bottom: 16px;
 
             @media screen and (min-width: 1024px) {
-                bottom: 185px;
+                bottom: 162px;
                 margin-bottom: 0px;
             }
 
             @media screen and (min-width: 1280px) {
-                bottom: 159px;
+                bottom: 152px;
             }
         }
 
@@ -206,11 +197,11 @@
 
         &:last-child {
             @media screen and (min-width: 1024px) {
-                bottom: 121px;
+                bottom: 98px;
             }
 
             @media screen and (min-width: 1280px) {
-                bottom: 95px;
+                bottom: 88px;
             }
         }
     }
@@ -274,15 +265,19 @@ div.swiper-details-restaurant {
     margin-bottom: 32px;
     overflow: hidden;
 
+
     @media screen and (min-width: 1024px) {
-        width: 662px;
-        margin-left: 265px;
-    }
+            width: 662px;
+            margin-left: 265px;
+            margin-bottom: 10px;
+        }
 
     @media screen and (min-width: 1280px) {
-        width: 874px;
-        margin-left: 300px;
-    }
+            width: 874px;
+            margin-left: 300px;
+            margin-bottom: 0px;
+        }
+
 }
 
 .details-restaurant__list {
