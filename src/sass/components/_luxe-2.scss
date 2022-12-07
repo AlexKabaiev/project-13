@@ -57,60 +57,58 @@
 }
 .container__room {
   position: relative;
-
-  &__title {
-      font-family: 'Times New Roman';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 1.15;
-      color: var(--color-gray);
-    }
-  
-    &__logo {
-      font-family: 'Film P3';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 1.08;
-      letter-spacing: 0.3em;
-      color: var(--color-logo);
-      margin-top: 8px;
-    }
-  
-    &__heading {
-      font-family: 'Times New Roman';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.17px;
-      letter-spacing: 0.05em;
-      color: var(--color-black);
-      margin-top: 12px;
-    }
-  
-    &__text {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
-      margin-top: 32px;
-    }
-  
-    &__img {
-      background: #dadada;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-  
-      margin-top: 32px;
-      margin-bottom: 32px;
-      margin-left: auto;
-      margin-right: 0;
-    }
+}
+.hotel-room__title__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-gray);
 }
 
+.hotel-room__title__logo {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--color-logo);
+  margin-top: 8px;
+}
+
+.hotel-room__title__heading {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17px;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+  margin-top: 12px;
+}
+
+.hotel-room__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+}
+
+.hotel-room__img {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: 0;
+}
 
 .hotel-button__detals {
   margin-left: auto;
@@ -196,7 +194,6 @@
   }
 }
 
-
 // SWIPER
 .swiper__room {
   width: 284px;
@@ -214,7 +211,6 @@
 .room-hotel__item {
   margin-right: 16px;
 }
-
 
 .room-hotel__foto {
   background: #dadada;
