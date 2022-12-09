@@ -1,25 +1,26 @@
-const swiper = new Swiper('.about-restaurant__slaider', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
 
-  //
-
   breakpoints: {
     // адаптив для разрешения экрана
     414: {
-      slidesPerView: 'auto',
+      slidesPerView: 1.29,
       spaceBetween: 20,
+      centeredSlides: true,
     },
     // when window width is >=
     1024: {
-      slidesPerView: 'auto',
+      slidesPerView: '2',
       spaceBetween: 40,
+      centeredSlides: false,
     },
     // when window width is >=
     1280: {
-      slidesPerView: 'auto',
+      slidesPerView: '2',
       spaceBetween: 40,
+      centeredSlides: false,
     },
   },
 
@@ -30,12 +31,18 @@ const swiper = new Swiper('.about-restaurant__slaider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-start',
-    prevEl: '.swiper-button-finish',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+  grabcursor: true,
+  watchoverflow: true,
+
+  autoplay: {
+    delay: 2000,
   },
 });

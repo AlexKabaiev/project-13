@@ -167,7 +167,7 @@
         }
     }
 
-    &__slaider {
+    &__list {
         margin-top: 32px;
         margin-bottom: 20px;
         position: relative;
@@ -184,7 +184,7 @@
         }
     }
 
-    &__slaider-item-first {
+    &__slider-item-first {
         @media screen and (min-width: 1024px) {
             position: absolute;
             left: 489px;
@@ -197,7 +197,7 @@
         }
     }
 
-    &__slaider-item-second {
+    &__slider-item-second {
         position: absolute;
         top: 0;
 
