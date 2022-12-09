@@ -1,0 +1,2 @@
+new Swiper(".swiper-about-restaurant",{direction:"horizontal",loop:!0,breakpoints:{414:{slidesPerView:"auto",spaceBetween:20},1024:{slidesPerView:"auto",spaceBetween:40},1280:{slidesPerView:"auto",spaceBetween:40}},pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-start",prevEl:".swiper-button-finish"},scrollbar:{el:".swiper-scrollbar"}});
+//# sourceMappingURL=index.50bb0c44.js.map
