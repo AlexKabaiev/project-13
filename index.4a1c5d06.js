@@ -1,2 +1,0 @@
-new Swiper(".about-restaurant__slaider",{direction:"horizontal",loop:!0,breakpoints:{414:{slidesPerView:"auto",spaceBetween:20},1024:{slidesPerView:"auto",spaceBetween:40},1280:{slidesPerView:"auto",spaceBetween:40}},pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-start",prevEl:".swiper-button-finish"},scrollbar:{el:".swiper-scrollbar"}});
-//# sourceMappingURL=index.4a1c5d06.js.map
