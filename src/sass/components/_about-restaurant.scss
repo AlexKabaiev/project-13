@@ -223,16 +223,16 @@
     }
 
     &__button {
-        display: flex;
-        align-items: center;
         width: 32px;
-        height: 32px;
-        border: none;
-        padding: 0;
-        background-color: #fffdee00;
-        color: var(--color-black);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: var(--animation-time);  
+    transition-timing-function: var(--bezier-function);
     }
 
     &__button:hover,
