@@ -1,17 +1,17 @@
-const swiper = new Swiper('.swiper-about-restaurant', {
+const swiper = new Swiper('.about-restaurant__slaider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  
+
   //
 
   breakpoints: {
     // адаптив для разрешения экрана
     414: {
       slidesPerView: 'auto',
-          spaceBetween: 20,
+      spaceBetween: 20,
     },
-    // when window width is >= 
+    // when window width is >=
     1024: {
       slidesPerView: 'auto',
       spaceBetween: 40,
@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper-about-restaurant', {
     1280: {
       slidesPerView: 'auto',
       spaceBetween: 40,
-    }
+    },
   },
 
   // If we need pagination
